@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Test</title>
+    <title>Try</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
@@ -24,6 +24,26 @@ var map = new mapboxgl.Map({
 });
 
 map.addControl(new mapboxgl.NavigationControl());
+
+map.addLayer({
+        'id': 'test8',
+        'type': 'fill',
+        'source': 'reciprocite',
+        'layout': {
+            'visibility': 'none'
+        },       
+        'source-layer': 'test8'
+    });
+
+map.addLayer({
+        'id': 'myfile-0kxlkt',
+        'type': 'fill',
+        'source': 'reciprocite',
+        'layout': {
+            'visibility': 'none'
+        },       
+        'source-layer': 'myfile-0kxlkt'
+    });
 
 toggleLayer(['test8'], 'reciprocite toggle 1');
 toggleLayer(['myfile-0kxlkt'], 'reciprocite toggle 2');
