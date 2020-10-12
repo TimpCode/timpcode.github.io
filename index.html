@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Something</title>
+    <title>Test</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
@@ -25,16 +25,19 @@ var map = new mapboxgl.Map({
 
 map.addControl(new mapboxgl.NavigationControl());
 
-        map.on('load', function () {
-                map.addSource("no2", {
-                        "type": "vector",
-                        "url": "mapbox://timpelle.test8"
-                });
+map.on('load', function () {
+    map.addSource("no2", {
+        "type": "vector",
+        "data": "/Users/tim_p/Downloads/test8-geoj.geojson"
+        });
 
         map.addLayer({
-                //"id": "points",
+                "id": "points",
                 "type": "circle",
                 "source": "no2",
+                "layout": {
+                    "visibility": "visible"
+                },
                 "paint": {
                         "circle-radius": 5,
                         "circle-color": "ff0000"
