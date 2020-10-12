@@ -25,25 +25,34 @@ var map = new mapboxgl.Map({
 
 map.addControl(new mapboxgl.NavigationControl());
 
-map.on('load', function () {
-    map.addSource("no2", {
-        "type": "vector",
-        "data": "/Users/tim_p/Downloads/test8-geoj.geojson"
-        });
+toggleLayer(['test8'], 'reciprocite toggle 1');
+toggleLayer(['myfile-0kxlkt'], 'reciprocite toggle 2');
 
-        map.addLayer({
-                "id": "points",
-                "type": "circle",
-                "source": "no2",
-                "layout": {
-                    "visibility": "visible"
-                },
-                "paint": {
-                        "circle-radius": 5,
-                        "circle-color": ["get", "fill"]
-                }
-        });
-});
+function toggleLayer(ids, name) {
+    var link = document.createElement('a');
+    link.href = '#';
+    link.className = 'active';
+    link.textContent = name;
+
+    link.onclick = function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        for (layers in ids){
+            var visibility = map.getLayoutProperty(ids[layers], 'visibility');
+            if (visibility === 'visible') {
+                map.setLayoutProperty(ids[layers], 'visibility', 'none');
+                this.className = '';
+            } else {
+                this.className = 'active';
+                map.setLayoutProperty(ids[layers], 'visibility', 'visible');
+            }
+         }
+
+    };
+
+    var layers = document.getElementById('menu');
+    layers.appendChild(link);
+}
 
 </script>
 
