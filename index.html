@@ -67,72 +67,25 @@
 		});
 
 		map.on('load', function () {
-// add source and layer for some substance
-map.addSource('no2-trop', {
-type: 'vector',
-url: 'timpelle.8scorrvk'
-});
-map.addLayer({
-'id': 'no2-trop',
-'type': 'circle',
-'source': 'no2-trop',
-'layout': {
-// make layer visible by default
-'visibility': 'visible'
-},
-'source-layer': 'no2-trop'
-});
- 
-// add source and layer for contours
-map.addSource('no2-strat', {
-type: 'vector',
-url: 'timpelle.test8'
-});
-map.addLayer({
-'id': 'no2-strat',
-'type': 'line',
-'source': 'no2-strat',
-'source-layer': 'no2-strat',
-'layout': {
-// make layer visible by default
-'visibility': 'visible'
-}
-});
-});
- 
-// enumerate ids of the layers
-var toggleableLayerIds = ['no2-strat', 'no2-trop'];
- 
-// set up the corresponding toggle button for each layer
-for (var i = 0; i < toggleableLayerIds.length; i++) {
-	var id = toggleableLayerIds[i];
- 
-	var link = document.createElement('a');
-	link.href = '#';
-	link.className = 'active';
-	link.textContent = id;
- 
-	link.onclick = function (e) {
-		var clickedLayer = this.textContent;
-		e.preventDefault();
-		e.stopPropagation();
- 
-		var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
- 
-		// toggle layer visibility by changing the layout object's visibility property
-		if (visibility === 'visible') {
-			map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-			this.className = '';
-			} 
-		else {
-			this.className = 'active';
-		map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+		map.addSource('mapbox-terrain', {
+		type: 'vector',
+		url: 'mapbox://timpelle.test8'
+		});
+		map.addLayer({
+		'id': 'terrain-data',
+		'type': 'line',
+		'source': 'mapbox-terrain',
+		'source-layer': 'contour',
+		'layout': {
+		'line-join': 'round',
+		'line-cap': 'round'
+		},
+		'paint': {
+		'line-color': '#ff69b4',
+		'line-width': 1
 		}
-	};
- 
-	var layers = document.getElementById('menu');
-	layers.appendChild(link);
-	}
+		});
+		});
 	</script>
 </body>
 </html>
