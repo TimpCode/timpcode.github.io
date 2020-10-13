@@ -67,7 +67,7 @@ var map = new mapboxgl.Map({
     zoom: 3
 });
 
-var toggleableLayerIds = ['test10', 'test11'];
+var toggleableLayerIds = ['test10', 'test11', 'test1'];
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
     var id = toggleableLayerIds[i];
@@ -81,24 +81,16 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
         var clickedLayer = this.textContent;
         e.preventDefault();
         e.stopPropagation();
-         
-        var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
-
-        // toggle layer visibility by changing the layout object's visibility property
-        if (visibility === 'visible') {
-            map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-            this.className = '';
-        } 
-        else {
-            this.className = 'active';
-            map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-        }
-        /*for (var j = 0; j < toggleableLayerIds.length; j++) {
-            if (id != toggleableLayerIds[j] && visibility === 'visible') {
-                map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-                this.className = '';
+        for (var j = 0; j < toggleableLayerIds.length; j++) {
+            if (clickedLayer === toggleableLayerIds[j]) {
+                layers.children[j].className = 'active';
+                map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'visible');
             }
-        }*/
+            else {
+                layers.children[j].className = '';
+                 map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'none');
+            }
+        }
     };
          
     var layers = document.getElementById('menu');
