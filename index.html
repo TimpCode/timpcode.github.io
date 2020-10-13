@@ -126,7 +126,7 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
             map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
         }
         for (var j = 0; j < toggleableLayerIds.length; j++) {
-            if (toggleableLayerIds[i] != toggleableLayerIds[j] && visibility === 'visible') {
+            if (id != toggleableLayerIds[j] && visibility === 'visible') {
                 map.setLayoutProperty(clickedLayer, 'visibility', 'none');
                 this.className = '';
             }
