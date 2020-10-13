@@ -67,6 +67,22 @@ var map = new mapboxgl.Map({
     zoom: 3
 });
 
+map.on('load', function() {
+    map.addLayer({
+        'id': 'test9',
+        'type': 'circle',
+        'layout': {
+            'visibility': 'visible'
+        },
+        'paint': {
+            'circle-radius': 8,
+            'circle-color': '#ff0000'
+        },
+        'source-layer': 'test9'
+    });
+
+});
+
 var toggleableLayerIds = [ 'test1','test9', 'test8', 'test10' ];
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
