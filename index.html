@@ -67,7 +67,39 @@ var map = new mapboxgl.Map({
     zoom: 3
 });
 
-var toggleableLayerIds = [ 'test11','test10','test9', 'test8', 'test1' ];
+    map.on('load', function() {
+        map.addsource('base', {
+            type: 'vector',
+            url: 'mapbox://styles/timpelle/ckg7pna975sge1as446j57ltt'
+        });
+        map.addlayer({
+            'id': 'test10',
+            'type': 'circle',
+            'source': 'base',
+            'layout': {
+                'visibility': 'visible'
+            },
+            'paint': {
+                'circle-radius': 8,
+                'circle-color': '#ffffff'
+            },
+            'source-layer': 'test10'
+        });
+        map.addlayer({
+            'id': 'test11',
+            'type': 'circle',
+            'source': 'base',
+            'layout': {
+                'visibility': 'visible'
+            },
+            'paint': {
+                'circle-radius': 8,
+                'circle-color': '#000000'
+            },
+            'source-layer': 'test11'
+    });
+
+var toggleableLayerIds = [ 'test11','test10' ];
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
     var id = toggleableLayerIds[i];
