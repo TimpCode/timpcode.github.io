@@ -67,28 +67,7 @@ var map = new mapboxgl.Map({
     zoom: 3
 });
 
-map.on('load', function() {
-    map.addsource('base', {
-        type: 'vector',
-        url: 'mapbox://styles/timpelle/ckg0hk48l27hz19ni63fqj0f1'
-    });
-    map.addLayer({
-        'id': 'test9',
-        'type': 'circle',
-        'source': 'base',
-        'layout': {
-            'visibility': 'visible'
-        },
-        'paint': {
-            'circle-radius': 10,
-            'circle-color': '#ff0000'
-        },
-        'source-layer': 'test9'
-    });
-
-});
-
-var toggleableLayerIds = [ 'test10','test9', 'test8', 'test1' ];
+var toggleableLayerIds = [ 'test11','test10','test9', 'test8', 'test1' ];
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
     var id = toggleableLayerIds[i];
