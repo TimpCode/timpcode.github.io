@@ -125,12 +125,12 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
             this.className = 'active';
             map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
         }
-        /*for (var j = 0; j < toggleableLayerIds.length; j++) {
+        for (var j = 0; j < toggleableLayerIds.length; j++) {
             if (id != toggleableLayerIds[j] && visibility === 'visible') {
                 map.setLayoutProperty(clickedLayer, 'visibility', 'none');
                 this.className = '';
             }
-        }*/
+        }
     };
          
     var layers = document.getElementById('menu');
