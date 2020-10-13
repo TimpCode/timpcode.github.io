@@ -68,11 +68,16 @@ var map = new mapboxgl.Map({
 });
 
 map.on('load', function() {
+    map.addsource('base', {
+        type: 'vector',
+        url: 'mapbox://styles/timpelle/ckg0hk48l27hz19ni63fqj0f1'
+    });
     map.addLayer({
         'id': 'test9',
         'type': 'circle',
+        'source': 'base',
         'layout': {
-            'visibility': 'visible'
+            'visibility': 'none'
         },
         'paint': {
             'circle-radius': 20,
