@@ -63,21 +63,21 @@ background: #3074a4;
     mapboxgl.accessToken = 'pk.eyJ1IjoidGltcGVsbGUiLCJhIjoiY2tnMGhnZjllMmg5ZzJ0czhxbmR3N3FsdCJ9.TP0s74fI8SCYVnxGbaoCFg';
 var map = new mapboxgl.Map({
 container: 'map',
-style: 'mapbox://styles/mapbox/streets-v11',
+style: 'mapbox://styles/mapbox/light-v10',
 zoom: 15,
 center: [-71.97722138410576, -13.517379300798098]
 });
  
 map.on('load', function () {
 // add source and layer for museums
-map.addSource('museums', {
+map.addSource('test', {
 type: 'vector',
-url: 'mapbox://mapbox.2opop9hr'
+url: 'mapbox://styles/timpelle/ckg7pna975sge1as446j57ltt'
 });
 map.addLayer({
-'id': 'museums',
+'id': 'test10',
 'type': 'circle',
-'source': 'museums',
+'source': 'test',
 'layout': {
 // make layer visible by default
 'visibility': 'visible'
@@ -86,7 +86,7 @@ map.addLayer({
 'circle-radius': 8,
 'circle-color': 'rgba(55,148,179,1)'
 },
-'source-layer': 'museum-cusco'
+'source-layer': 'test10'
 });
  
 // add source and layer for contours
