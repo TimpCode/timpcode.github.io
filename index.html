@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Test</title>
+    <title>Display</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
@@ -76,14 +76,14 @@ map.on('load', function() {
         },
         'paint': {
             'circle-radius': 20,
-            'circle-color': '#ff0000'
+            'circle-color': 'ff0000'
         },
         'source-layer': 'test9'
     });
 
 });
 
-var toggleableLayerIds = [ 'test1','test9', 'test8', 'test10' ];
+var toggleableLayerIds = [ 'test10','test9', 'test8', 'test1' ];
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
     var id = toggleableLayerIds[i];
