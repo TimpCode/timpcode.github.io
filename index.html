@@ -94,13 +94,7 @@ var map = new mapboxgl.Map({
             },
             'paint': {
                 'circle-radius': 8,
-                'circle-color': ['get', 'fill'],
-                'circle-radius': {
-                    'base': 1.75,
-                    'stops': [
-                        [12, 2],
-                        [22, 180]
-                    ]
+                'circle-color': ['get', 'fill']
             },
             'source-layer': 'test11'
     });
