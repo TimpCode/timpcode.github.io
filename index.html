@@ -106,34 +106,35 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
  
     var link = document.createElement('a');
     link.href = '#';
-link.className = 'active';
-link.textContent = id;
+    link.className = 'active';
+    link.textContent = id;
  
-link.onclick = function (e) {
-var clickedLayer = this.textContent;
-e.preventDefault();
-e.stopPropagation();
- 
-var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+    link.onclick = function (e) {
+        var clickedLayer = this.textContent;
+        e.preventDefault();
+        e.stopPropagation();
+         
+        var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
 
-// toggle layer visibility by changing the layout object's visibility property
-if (visibility === 'visible') {
-map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-this.className = '';
-} else {
-this.className = 'active';
-map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-}
-for (var j = 0; j < toggleableLayerIds.length; j++) {
-    if (id != toggleableLayerIds[j] && visibility === 'visible') {
-        map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-this.className = '';
-    }
-}
-};
- 
-var layers = document.getElementById('menu');
-layers.appendChild(link);
+        // toggle layer visibility by changing the layout object's visibility property
+        if (visibility === 'visible') {
+            map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+            this.className = '';
+        } 
+        else {
+            this.className = 'active';
+            map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+        }
+        for (var j = 0; j < toggleableLayerIds.length; j++) {
+            if (toggleableLayerIds[i] != toggleableLayerIds[j] && visibility === 'visible') {
+                map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+                this.className = '';
+            }
+        }
+    };
+         
+    var layers = document.getElementById('menu');
+    layers.appendChild(link);
 }
 
 </script>
