@@ -68,11 +68,11 @@ var map = new mapboxgl.Map({
 });
 
     map.on('load', function() {
-        map.addsource('base', {
+        map.addSource('base', {
             type: 'vector',
             url: 'mapbox://styles/timpelle/ckg7pna975sge1as446j57ltt'
         });
-        map.addlayer({
+        map.addLayer({
             'id': 'test10',
             'type': 'circle',
             'source': 'base',
@@ -85,7 +85,7 @@ var map = new mapboxgl.Map({
             },
             'source-layer': 'test10'
         });
-        map.addlayer({
+        map.addLayer({
             'id': 'test11',
             'type': 'circle',
             'source': 'base',
