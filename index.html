@@ -62,7 +62,7 @@ background: #3074a4;
 mapboxgl.accessToken = 'pk.eyJ1IjoidGltcGVsbGUiLCJhIjoiY2tnMGhnZjllMmg5ZzJ0czhxbmR3N3FsdCJ9.TP0s74fI8SCYVnxGbaoCFg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/timpelle/ckg7pna975sge1as446j57ltt',
+    style: 'mapbox://styles/mapbox/light-v10',
     center: [51,2],
     zoom: 3
 });
@@ -70,7 +70,7 @@ var map = new mapboxgl.Map({
     map.on('load', function() {
         map.addSource('base', {
             type: 'vector',
-            url: 'mapbox://styles/mapbox/light-v10'
+            url: 'mapbox://styles/timpelle/ckg7pna975sge1as446j57ltt'
         });
         map.addLayer({
             'id': 'test10',
