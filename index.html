@@ -64,7 +64,9 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/timpelle/ckg7pna975sge1as446j57ltt',
     center: [51,2],
-    zoom: 3
+    zoom: 3,
+    minZoom: 1,
+    maxZoom: 10
 });
 
 var toggleableLayerIds = ['test10', 'test11'];
