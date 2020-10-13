@@ -81,7 +81,7 @@ var map = new mapboxgl.Map({
             },
             'paint': {
                 'circle-radius': 8,
-                'circle-color': '#ffffff'
+                'circle-color': ['get', 'fill']
             },
             'source-layer': 'test10'
         });
@@ -94,7 +94,7 @@ var map = new mapboxgl.Map({
             },
             'paint': {
                 'circle-radius': 8,
-                'circle-color': '#000000'
+                'circle-color': ['get', 'fill']
             },
             'source-layer': 'test11'
     });
@@ -103,31 +103,36 @@ var map = new mapboxgl.Map({
 var toggleableLayerIds = [ 'test11','test10' ];
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
-    var id = toggleableLayerIds[i];
+    var layerContent = [null, null];
 
-    var link = document.createElement('a');
-    link.href = '#';
-    link.className = 'active';
-    link.textContent = id;
+    // set up the corresponding toggle button for each layer
+    for (var i = 0; i < toggleableLayerIds.length; i++) {
+        var id = toggleableLayerIds[i];
 
-    link.onclick = function (e) {
-        var clickedLayer = this.textContent;
-        e.preventDefault();
-        e.stopPropagation();
+        var link = document.createElement('a');
+        link.href = '#';
+        link.className = 'active';
+        link.textContent = id;
 
-        var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+        link.onclick = function (e) {
+            var clickedLayer = this.textContent;
+            e.preventDefault();
+            e.stopPropagation();
 
-        if (visibility === 'visible') {
-            map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-            this.className = '';
-        } else {
-            this.className = 'active';
-            map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-        }
-    };
-    var layers = document.getElementById('menu');
-    layers.appendChild(link);
-}
+            for (var j = 0; j < layerContent.length; j++)
+            {
+                layerContent[j].setLayoutProperty(clickedLayer, 'visibility', 'none');
+              layerContent[j].className = '';
+            }
+
+             this.className = 'active';
+             map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+        };
+
+        var layers = document.getElementById('menu');
+        layers.appendChild(link);
+        layerContent[i] = link;
+    }
 
 </script>
 
