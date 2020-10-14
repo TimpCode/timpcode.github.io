@@ -131,11 +131,12 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
                  map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'none');
             }
         }
-    };
+    }
+    return clickedLayer
+    ;
          
     var layers = document.getElementById('menu');
     layers.appendChild(link);
-    return clickedLayer
 }
 
 </script>
