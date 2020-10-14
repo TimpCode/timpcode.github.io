@@ -68,12 +68,15 @@ var map = new mapboxgl.Map({
     minZoom: 2,
     maxZoom: 7
 });
-
+map.addSource('base', {
+            type: 'vector',
+            url: 'http://a.tiles.mapbox.com/v4/timpelle.test10/page.html?access_token=sk.eyJ1IjoidGltcGVsbGUiLCJhIjoiY2tnMjV2dXltMG83MDJxcXdhd2V5ZDhiZSJ9.OQ1gdsPtK4uZH5sLGASQ_w'
+        });
 map.on('load', function() {
     map.addLayer({
     'id': 'test10',
     'type': 'circle',
-    //'source': 'base',
+    'source': 'base',
     'layout': {
         'visibility': 'visible'
     },
