@@ -87,10 +87,10 @@ var map = new mapboxgl.Map({
   container: 'map', // container element id
   style: 'mapbox://styles/mapbox/light-v10',
   center: [52, 4.4], // initial map center in [lon, lat]
-  zoom: 3
+  zoom: 2
 });
 
-
+var zoomThreshold = 4;
 
 map.on('load', function () {
 // data from opendata.cityofboise.org/
@@ -103,6 +103,7 @@ map.addSource('eventscovid', {
     'id': 'eventscovid',
     'type': 'symbol',
     'source': 'eventscovid',
+    'minzoom': zoomThreshold,
     'filter': ['==', ['number', ['get', 'week']], 1],
     'layout': {
     	'text-field' : ['format',['downcase', ['get', 'name']]]}
