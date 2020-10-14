@@ -130,7 +130,33 @@ map.addSource('eventscovid', {
     // }
     // 'filter': ['==', ['number', ['get', 'week']], 1]
   });
-
+map.addSource('europe', {
+'type': 'geojson',
+'data': '/europe-test.geojson'
+});
+map.addLayer({
+      'id': 'europe',
+      'type': 'circle',
+      'source': 'europe',
+      'layout': {
+         'visibility': 'visible'
+      },
+      'paint': {
+         'circle-radius': {
+            'base': 1.75,
+            'stops': [
+              [2,4],
+              [3,5],
+              [4,6],
+              [5,7],
+              [6,8],
+              [7,9]
+              ]},
+        'circle-color': ['get', 'fill'],
+        'circle-blur': 1,
+        'circle-opacity': 0.4
+      }
+   });
 });
 
 document.getElementById('slider').addEventListener('input', function(e) {
