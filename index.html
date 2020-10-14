@@ -69,14 +69,14 @@ var map = new mapboxgl.Map({
     maxZoom: 7
 });
 map.on('load', function() {
-   map.addSource('europe2', {
+   map.addSource('europe1', {
 'type': 'geojson',
 'data': '/europe1-test.geojson'
 });
 map.addLayer({
-      'id': 'europe2',
+      'id': 'europe1',
       'type': 'circle',
-      'source': 'eurpoe1',
+      'source': 'europe1',
       'layout': {
          'visibility': 'visible'
       },
@@ -87,14 +87,14 @@ map.addLayer({
         'circle-opacity': 0.4
       }
    });
-   map.addSource('europe1', {
+   map.addSource('europe2', {
 'type': 'geojson',
 'data': '/europe1-test.geojson'
 });
 map.addLayer({
-      'id': 'europe1',
+      'id': 'europe2',
       'type': 'circle',
-      'source': 'eurpoe1',
+      'source': 'europe1',
       'layout': {
          'visibility': 'visible'
       },
