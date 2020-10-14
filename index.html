@@ -96,7 +96,7 @@ map.on('load', function () {
 // data from opendata.cityofboise.org/
 map.addSource('eventscovid', {
 'type': 'geojson',
-'data': '/events.geojson'
+'data': '/Downloads/events.geojson'
 });
 
   map.addLayer({
@@ -129,7 +129,7 @@ map.addSource('eventscovid', {
     // }
     // 'filter': ['==', ['number', ['get', 'week']], 1]
   });
-  
+
 });
 
 document.getElementById('slider').addEventListener('input', function(e) {
