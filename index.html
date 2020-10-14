@@ -62,11 +62,44 @@ background: #3074a4;
 mapboxgl.accessToken = 'pk.eyJ1IjoidGltcGVsbGUiLCJhIjoiY2tnMGhnZjllMmg5ZzJ0czhxbmR3N3FsdCJ9.TP0s74fI8SCYVnxGbaoCFg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/timpelle/ckg7pna975sge1as446j57ltt',
+    style: 'mapbox://styles/timpelle/ckg926yj373rf19oll3xlzm2j',
     center: [51,2],
     zoom: 3,
     minZoom: 2,
     maxZoom: 7
+});
+
+map.on('load', function() {
+    map.addSource('base', {
+            type: 'vector',
+            url: 'mapbox://styles/timpelle/ckg926yj373rf19oll3xlzm2j'
+        });
+            map.addLayer({
+            id: 'test10',
+            type: 'circle',
+            source: 'base',
+            layout: {
+                'visibility': 'visible'
+            },
+            paint: {
+                'circle-radius': 8,
+                'circle-color': 'rgba(55,148,179,1)'
+            },
+            source-layer: 'test10'
+        });
+        map.addLayer({
+            id: 'test11',
+            type: 'circle',
+            source: 'base',
+            layout: {
+                'visibility': 'none'
+            },
+            paint: {
+                'circle-radius': 8,
+                'circle-color': ["get", "fill"]
+            },
+            source-layer: 'test11'
+    });
 });
 
 var toggleableLayerIds = ['test10', 'test11'];
