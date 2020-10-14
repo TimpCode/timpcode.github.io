@@ -87,7 +87,7 @@ var map = new mapboxgl.Map({
   container: 'map', // container element id
   style: 'mapbox://styles/mapbox/light-v10',
   center: [52, 4.4], // initial map center in [lon, lat]
-  zoom: 2
+  zoom: 4
 });
 
 var zoomThreshold = 4;
@@ -138,6 +138,24 @@ map.addLayer({
       'id': 'europe1',
       'type': 'circle',
       'source': 'europe1',
+      'layout': {
+         'visibility': 'visible'
+      },
+      'paint': {
+        'circle-radius': 5,
+        'circle-color': ['get', 'fill'],
+        'circle-blur': 1,
+        'circle-opacity': 0.4
+      }
+   });
+map.addSource('europe2', {
+'type': 'geojson',
+'data': '/europe2-test.geojson'
+});
+map.addLayer({
+      'id': 'europe2',
+      'type': 'circle',
+      'source': 'europe2',
       'layout': {
          'visibility': 'visible'
       },
