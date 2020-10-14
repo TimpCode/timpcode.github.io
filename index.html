@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Test</title>
+    <title>Tryout</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
@@ -69,7 +69,7 @@ var map = new mapboxgl.Map({
     maxZoom: 7
 });
 map.on('load', function() {
-   map.addSource('base', {
+   map.addSource('test10', {
       type: 'vector',
       tiles: [
         "http://a.tiles.mapbox.com/v4/timpelle.test10/{z}/{x}/{y}.vector.pbf",
@@ -79,7 +79,7 @@ map.on('load', function() {
    map.addLayer({
       'id': 'test10',
       'type': 'circle',
-      'source': 'base',
+      'source': 'test10',
       'layout': {
          'visibility': 'visible'
    },
@@ -89,12 +89,12 @@ map.on('load', function() {
             'stops': [
                [2, 2],
                [7, 20]
-               ],
+               ]},
         'circle-color': ['get', 'fill']
       },
       'source-layer': 'test10'
    });
-   map.addSource('base', {
+   map.addSource('test11', {
       type: 'vector',
       tiles: [
         "http://a.tiles.mapbox.com/v4/timpelle.test11/{z}/{x}/{y}.vector.pbf",
@@ -104,7 +104,7 @@ map.on('load', function() {
    map.addLayer({
       'id': 'test11',
       'type': 'circle',
-      'source': 'base',
+      'source': 'test11',
       'layout': {
          'visibility': 'visible'
    },
@@ -114,7 +114,7 @@ map.on('load', function() {
             'stops': [
                [2, 2],
                [7, 20]
-               ],
+               ]},
         'circle-color': ['get', 'fill']
       },
       'source-layer': 'test11'
