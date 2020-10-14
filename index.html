@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Test</title>
+    <title>Tryout</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
@@ -71,7 +71,10 @@ var map = new mapboxgl.Map({
 map.on('load', function() {
    map.addSource('base', {
       type: 'vector',
-      url: 'http://a.tiles.mapbox.com/v4/timpelle.test10/page.html?access_token=sk.eyJ1IjoidGltcGVsbGUiLCJhIjoiY2tnMjV2dXltMG83MDJxcXdhd2V5ZDhiZSJ9.OQ1gdsPtK4uZH5sLGASQ_w'
+      tiles: [
+        "http://a.tiles.mapbox.com/v4/timpelle.test10/{z}/{x}/{y}.vector.pbf",
+        "http://http://b.tiles.mapbox.com/v4/timpelle.test10/{z}/{x}/{y}.vector.pbf"
+    ]
    });
    map.addLayer({
       'id': 'test10',
