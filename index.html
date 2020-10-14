@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Test</title>
+    <title>Tryout</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
@@ -82,13 +82,26 @@ map.on('load', function() {
       'source': 'base',
       'layout': {
          'visibility': 'visible'
-    },
-    'paint': {
+   },
+      'paint': {
         'circle-radius': 5,
         'circle-color': ['get', 'fill']
-    },
-    'source-layer': 'test10'
-});
+      },
+      'source-layer': 'test10'
+   });
+   map.addLayer({
+      'id': 'test11',
+      'type': 'circle',
+      'source': 'base',
+      'layout': {
+         'visibility': 'visible'
+   },
+      'paint': {
+        'circle-radius': 5,
+        'circle-color': ['get', 'fill']
+      },
+      'source-layer': 'test11'
+   })
 });
 
 var toggleableLayerIds = ['test10', 'test11'];
