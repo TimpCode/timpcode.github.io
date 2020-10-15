@@ -147,14 +147,14 @@ map.addSource('eventscovid', {
     // }
     // 'filter': ['==', ['number', ['get', 'week']], 1]
   });
-map.addSource('week1', {
+map.addSource('no2_week1', {
 'type': 'geojson',
-'data': '/week1.geojson'
+'data': '/no2_week1.geojson'
 });
 map.addLayer({
-      'id': 'week1',
+      'id': 'no2_week1',
       'type': 'circle',
-      'source': 'week1',
+      'source': 'no2_week1',
       // 'filter': ['==', ['number', ['get', 'week']], 1],
       'layout': {
          'visibility': 'visible'
@@ -194,12 +194,12 @@ map.addLayer({
 
 document.getElementById('slider').addEventListener('input', function(e) {
   var week = parseInt(e.target.value);
-  currentActive = ('week'+week);
+  currentActive = ('no2_week'+week);
 
   //checken of de week al exists
   for (var i = 0; i < 5; i++) {
       // console.log(i);
-    mapLayer = map.getLayer('week'+i)
+    mapLayer = map.getLayer('no2_week'+i)
     nonExist = (typeof mapLayer == 'undefined')
 
     if (i !== week) {
@@ -207,20 +207,20 @@ document.getElementById('slider').addEventListener('input', function(e) {
         continue;
       }
       if (i < week - 2 || i > week + 2) {
-        map.removeLayer('week'+i);
-        map.removeSource('week'+i);
+        map.removeLayer('no2_week'+i);
+        map.removeSource('no2_week'+i);
       }
-      else { map.setLayoutProperty('week'+i, 'visibility', 'none'); }
+      else { map.setLayoutProperty('no2_week'+i, 'visibility', 'none'); }
     }
     if (i == week) {
       if (nonExist) {
-        mapCreate('week'+i+".geojson", 'week'+i);
+        mapCreate('no2_week'+i+".geojson", 'no2_week'+i);
       }
-      map.setLayoutProperty('week'+i, 'visibility', 'visible');
+      map.setLayoutProperty('no2_week'+i, 'visibility', 'visible');
     }}
 
   // update the map
-  map.setFilter('eventscovid', ['==', ['number', ['get', 'week']], week]);
+  map.setFilter('eventscovid', ['==', ['number', ['get', 'no2_week']], week]);
 
   // converting 0-23 hour to AMPM format
   // var ampm = hour >= 12 ? 'PM' : 'AM';
@@ -229,5 +229,34 @@ document.getElementById('slider').addEventListener('input', function(e) {
   // update text in the UI
   document.getElementById('active-hour').innerText = week;
 });
+
+/*var toggleableLayerIds = ['europe1', 'europe2'];
+
+for (var i = 0; i < toggleableLayerIds.length; i++) {
+    var id = toggleableLayerIds[i];
+ 
+    var link = document.createElement('a');
+    link.href = '#';
+    link.className = 'active';
+    link.textContent = id;
+ 
+    link.onclick = function (e) {
+        var clickedLayer = this.textContent;
+        e.preventDefault();
+        e.stopPropagation();
+        for (var j = 0; j < toggleableLayerIds.length; j++) {
+            if (clickedLayer === toggleableLayerIds[j]) {
+                layers.children[j].className = 'active';
+                map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'visible');
+            }
+            else {
+                layers.children[j].className = '';
+                 map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'none');
+            }
+        }
+    };    
+    var layers = document.getElementById('menu');
+    layers.appendChild(link);
+}
 </script>
 </body>
