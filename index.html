@@ -1,144 +1,233 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <meta charset='utf-8' />
-    <title>Tryout</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
-    <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
-    </style>
-</head>
-<body>
+<meta charset='utf-8' />
+<title>NYC motor vehicle collisions</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
 <style>
-    #menu {
-background: #fff;
-position: absolute;
-z-index: 1;
-top: 10px;
-right: 10px;
-border-radius: 3px;
-width: 120px;
-border: 1px solid rgba(0, 0, 0, 0.4);
-font-family: 'Open Sans', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
 }
- 
-#menu a {
-font-size: 13px;
-color: #404040;
-display: block;
-margin: 0;
-padding: 0;
-padding: 10px;
-text-decoration: none;
-border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-text-align: center;
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
- 
-#menu a:last-child {
-border: none;
+
+h1 {
+  font-size: 20px;
+  line-height: 30px;
 }
- 
-#menu a:hover {
-background-color: #f8f8f8;
-color: #404040;
+
+h2 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
- 
-#menu a.active {
-background-color: #3887be;
-color: #ffffff;
+
+a {
+  text-decoration: none;
+  color: #2dc4b2;
 }
- 
-#menu a.active:hover {
-background: #3074a4;
+
+#console {
+  position: absolute;
+  width: 240px;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: white;
+}
+.session {
+  margin-bottom: 20px;
+}
+
+.row {
+  height: 12px;
+  width: 100%;
+}
+
+.colors {
+  background: linear-gradient(to right, #2dc4b2, #3bb3c3, #669ec4, #8b88b6, #a2719b, #aa5e79);
+  margin-bottom: 5px;
+}
+
+.label {
+  width: 15%;
+  display: inline-block;
+  text-align: center;
+}
+
+.strictness-check {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
 }
 </style>
- 
-<nav id="menu"></nav>
-<div id="map"></div>
+</head>
+
+<body>
+<div id='map'></div>
+<div id='console'>
+  <h1>Lockdown strictness</h1>
+  <div class='session'>
+    <h2>Strictness 0 (none) - 100 (strict)</h2>
+    <div class='session' id='sliderbar'>
+      <h2>Week: <label id='active-hour'>1</label></h2>
+      <input id='slider' class='row' type='range' min='1' max='4' step='1' value='1' />
+    </div>
+  </div>
+  <div class='substance'>
+    <label id="substance-label">Substance:</label>
+    <select name='substance' id='substance'>
+      <option value='NO2'>NO2</option>
+      <option value='CH4'>CH4</option>
+    </select>
+    <label class='strictness-check'>Show lockdown strictness<input type="checkbox"></label>
+  </div>
+</div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoibHVjYXNkZWdldXMiLCJhIjoiY2tnMjQwdDZzMDFlMDJwbTJkcXB1ZWp2cSJ9.DEa03DkTf6rOxdA5MNVKyQ';
+var bounds = [
+[-30, 30], // Southwest coordinates
+[60, 80] // Northeast coordinates
+];
+centerOfMap = [0,0];
+maxZoomOfMap = 10;
 var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/light-v10',
-    center: [51,2],
-    zoom: 3,
-    minZoom: 2,
-    maxZoom: 7
+  container: 'map', // container element id
+  style: 'mapbox://styles/mapbox/light-v10',
+  center:centerOfMap, // initial map center in [lon, lat]
+  zoom: 0,
+  minzoom: 2,
+maxBounds: bounds,
+maxZoom: maxZoomOfMap
 });
-map.on('load', function() {
-   map.addSource('europe1', {
+
+
+
+map.on('load', function () {
+// data from opendata.cityofboise.org/
+map.addSource('eventscovid', {
 'type': 'geojson',
-'data': '/europe1-test.geojson'
+'data': '/events.geojson'
+});
+
+  map.addLayer({
+    'id': 'eventscovid',
+    'type': 'symbol',
+    'source': 'eventscovid',
+    'filter': ['==', ['number', ['get', 'week']], 1],
+    'layout': {
+      'text-field' : ['format',['downcase', ['get', 'name']]]}
+    // paint: {
+    //   'circle-radius': [
+    //     'interpolate',
+    //     ['linear'],
+    //     ['number', ['get', 'Casualty']],
+    //     0, 4,
+    //     5, 24
+    //   ],
+    //   'circle-color': [
+    //     'interpolate',
+    //     ['linear'],
+    //     ['number', ['get', 'Casualty']],
+    //     0, '#2DC4B2',
+    //     1, '#3BB3C3',
+    //     2, '#669EC4',
+    //     3, '#8B88B6',
+    //     4, '#A2719B',
+    //     5, '#AA5E79'
+    //   ],
+    //   'circle-opacity': 0.8
+    // }
+    // 'filter': ['==', ['number', ['get', 'week']], 1]
+  });
+map.addSource('week1', {
+'type': 'geojson',
+'data': '/week1.geojson'
 });
 map.addLayer({
-      'id': 'europe1',
+      'id': 'week1',
       'type': 'circle',
-      'source': 'europe1',
+      'source': 'week1',
+      // 'filter': ['==', ['number', ['get', 'week']], 1],
       'layout': {
          'visibility': 'visible'
       },
       'paint': {
         'circle-radius': 5,
         'circle-color': ['get', 'fill'],
-        'circle-blur': 1,
-        'circle-opacity': 0.4
+//         'circle-blur': 1,
+        // 'circle-opacity': 1
       }
    });
-   map.addSource('europe2', {
+});
+
+
+function mapCreate(filename, id) {
+  map.addSource(id, {
 'type': 'geojson',
-'data': '/europe1-test.geojson'
+'data': filename
 });
 map.addLayer({
-      'id': 'europe2',
+      'id': id,
       'type': 'circle',
-      'source': 'europe1',
+      'source': id,
+      // 'filter': ['==', ['number', ['get', 'week']], 1],
       'layout': {
-         'visibility': 'visible'
+         'visibility': 'none'
       },
       'paint': {
         'circle-radius': 5,
         'circle-color': ['get', 'fill'],
-        'circle-blur': 1,
-        'circle-opacity': 0.4
+//         'circle-blur': 1,
+        'circle-opacity': 1
       }
    });
-});
-
-var toggleableLayerIds = ['europe1', 'europe2'];
-
-for (var i = 0; i < toggleableLayerIds.length; i++) {
-    var id = toggleableLayerIds[i];
- 
-    var link = document.createElement('a');
-    link.href = '#';
-    link.className = 'active';
-    link.textContent = id;
- 
-    link.onclick = function (e) {
-        var clickedLayer = this.textContent;
-        e.preventDefault();
-        e.stopPropagation();
-        for (var j = 0; j < toggleableLayerIds.length; j++) {
-            if (clickedLayer === toggleableLayerIds[j]) {
-                layers.children[j].className = 'active';
-                map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'visible');
-            }
-            else {
-                layers.children[j].className = '';
-                 map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'none');
-            }
-        }
-    }
-    ;
-         
-    var layers = document.getElementById('menu');
-    layers.appendChild(link);
 }
 
-</script>
 
+document.getElementById('slider').addEventListener('input', function(e) {
+  var week = parseInt(e.target.value);
+  currentActive = ('week'+week);
+
+  //checken of de week al exists
+  for (var i = 0; i < 5; i++) {
+      // console.log(i);
+    mapLayer = map.getLayer('week'+i)
+    nonExist = (typeof mapLayer == 'undefined')
+
+    if (i !== week) {
+      if (nonExist) {
+        continue;
+      }
+      if (i < week - 2 || i > week + 2) {
+        map.removeLayer('week'+i);
+        map.removeSource('week'+i);
+      }
+      else { map.setLayoutProperty('week'+i, 'visibility', 'none'); }
+    }
+    if (i == week) {
+      if (nonExist) {
+        mapCreate('week'+i+".geojson", 'week'+i);
+      }
+      map.setLayoutProperty('week'+i, 'visibility', 'visible');
+    }}
+
+  // update the map
+  map.setFilter('eventscovid', ['==', ['number', ['get', 'week']], week]);
+
+  // converting 0-23 hour to AMPM format
+  // var ampm = hour >= 12 ? 'PM' : 'AM';
+  // var hour12 = hour % 12 ? hour % 12 : 12;
+
+  // update text in the UI
+  document.getElementById('active-hour').innerText = week;
+});
+</script>
 </body>
-</html>
