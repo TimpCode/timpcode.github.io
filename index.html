@@ -193,68 +193,63 @@ map.addLayer({
 var toggleableLayerIds = ['no2', 'ch4'];
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
-    var id = toggleableLayerIds[i];
+  var id = toggleableLayerIds[i];
  
-    var link = document.createElement('a');
-    link.href = '#';
-    link.className = 'active';
-    link.textContent = id;
+  var link = document.createElement('substance');
+  link.href = '#';
+  link.className = 'active';
+  link.textContent = id;
  
-    link.onclick = function (e) {
-        var clickedLayer = this.textContent;
-        e.preventDefault();
-        e.stopPropagation();
-        for (var j = 0; j < toggleableLayerIds.length; j++) {
-            if (clickedLayer === toggleableLayerIds[j]) {
-                layers.children[j].className = 'active';
-                map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'visible');
+  link.onclick = function (e) {
+    var clickedLayer = this.textContent;
+    e.preventDefault();
+    e.stopPropagation();
+
+    document.getElementById('slider').addEventListener('input', function(e) {
+      var week = parseInt(e.target.value);
+      //currentActive = (id+'_week'+week);
+
+      for (var j = 0; j < toggleableLayerIds.length; j++) {
+        if (clickedLayer === toggleableLayerIds[j]) {
+          layers.children[j].className = 'active';
+          map.setLayoutProperty(toggleableLayerIds[j]+'_week'+week, 'visibility', 'visible');
+          for (var k = 0; k < 5; k++) {
+            // console.log(i);
+            mapLayer = map.getLayer(toggleableLayerIds[j]+'_week'+k)
+            nonExist = (typeof mapLayer == 'undefined')
+
+            if (k !== week) {
+              if (nonExist) {
+                continue;
+              }
+              if (k < week - 2 || k > week + 2) {
+                map.removeLayer(toggleableLayerIds[j]+'_week'+k);
+                map.removeSource(toggleableLayerIds[j]+'_week'+k);
+              }
+            else { map.setLayoutProperty(toggleableLayerIds[j]+'_week'+k, 'visibility', 'none'); }
             }
-            else {
-                layers.children[j].className = '';
-                 map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'none');
+            if (k == week) {
+              if (nonExist) {
+                mapCreate(toggleableLayerIds[j]+'_week'+k+".geojson", 'week'+k);
+              }
             }
+          }
+        map.setFilter('eventscovid', ['==', ['number', ['get', 'week']], week]);
+        document.getElementById('active-hour').innerText = week;
         }
-    };    
-  }
+        else {
+          layers.children[j].className = '';
+          map.setLayoutProperty(toggleableLayerIds[j]+'_week'+week, 'visibility', 'none');
+        }
+
     var layers = document.getElementById('substance');
-    layers.appendChild(link);
-
-document.getElementById('slider').addEventListener('input', function(e) {
-  var week = parseInt(e.target.value);
-  currentActive = (layers+'_week'+week);
-
-  //checken of de week al exists
-  for (var i = 0; i < 5; i++) {
-      // console.log(i);
-    mapLayer = map.getLayer(layers+'_week'+i)
-    nonExist = (typeof mapLayer == 'undefined')
-
-    if (i !== week) {
-      if (nonExist) {
-        continue;
-      }
-      if (i < week - 2 || i > week + 2) {
-        map.removeLayer(layers+'_week'+i);
-        map.removeSource(layers+'_week'+i);
-      }
-      else { map.setLayoutProperty(layers+'_week'+i, 'visibility', 'none'); }
-    }
-    if (i == week) {
-      if (nonExist) {
-        mapCreate(layers+'_week'+i+".geojson", layers+'_week'+i);
-      }
-      map.setLayoutProperty(layers+'_week'+i, 'visibility', 'visible');
-    }}
-
-  // update the map
-  map.setFilter('eventscovid', ['==', ['number', ['get', 'week']], week]);
-
-  // converting 0-23 hour to AMPM format
-  // var ampm = hour >= 12 ? 'PM' : 'AM';
-  // var hour12 = hour % 12 ? hour % 12 : 12;
-
-  // update text in the UI
-  document.getElementById('active-hour').innerText = week;
+    layers.appendChild(link);  
+  }
 });
+};
+//var layers = document.getElementById('substance');
+//    layers.appendChild(link);
+}
+
 </script>
 </body>
