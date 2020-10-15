@@ -220,7 +220,7 @@ document.getElementById('slider').addEventListener('input', function(e) {
     }}
 
   // update the map
-  map.setFilter('eventscovid', ['==', ['number', ['get', 'no2_week']], week]);
+  map.setFilter('eventscovid', ['==', ['number', ['get', 'week']], week]);
 
   // converting 0-23 hour to AMPM format
   // var ampm = hour >= 12 ? 'PM' : 'AM';
