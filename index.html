@@ -84,8 +84,8 @@ a {
   <div class='substance'>
     <label id="substance-label">Substance:</label>
     <select name='substance' id='substance'>
-      <option value='NO2'>NO2</option>
-      <option value='CH4'>CH4</option>
+      <option value='no2'>NO2</option>
+      <option value='ch4'>CH4</option>
     </select>
     <label class='strictness-check'>Show lockdown strictness<input type="checkbox"></label>
   </div>
@@ -190,11 +190,37 @@ map.addLayer({
       }
    });
 }
+var toggleableLayerIds = ['no2', 'ch4'];
 
+for (var i = 0; i < toggleableLayerIds.length; i++) {
+    var id = toggleableLayerIds[i];
+ 
+    var link = document.createElement('a');
+    link.href = '#';
+    link.className = 'active';
+    link.textContent = id;
+ 
+    link.onclick = function (e) {
+        var clickedLayer = this.textContent;
+        e.preventDefault();
+        e.stopPropagation();
+        for (var j = 0; j < toggleableLayerIds.length; j++) {
+            if (clickedLayer === toggleableLayerIds[j]) {
+                layers.children[j].className = 'active';
+                map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'visible');
+            }
+            else {
+                layers.children[j].className = '';
+                 map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'none');
+            }
+        }
+    };    
+    var layers = document.getElementById('substance');
+    layers.appendChild(link);
 
 document.getElementById('slider').addEventListener('input', function(e) {
   var week = parseInt(e.target.value);
-  currentActive = ('no2_week'+week);
+  currentActive = (layers+'_week'+week);
 
   //checken of de week al exists
   for (var i = 0; i < 5; i++) {
@@ -230,33 +256,6 @@ document.getElementById('slider').addEventListener('input', function(e) {
   document.getElementById('active-hour').innerText = week;
 });
 
-/*var toggleableLayerIds = ['europe1', 'europe2'];
-
-for (var i = 0; i < toggleableLayerIds.length; i++) {
-    var id = toggleableLayerIds[i];
- 
-    var link = document.createElement('a');
-    link.href = '#';
-    link.className = 'active';
-    link.textContent = id;
- 
-    link.onclick = function (e) {
-        var clickedLayer = this.textContent;
-        e.preventDefault();
-        e.stopPropagation();
-        for (var j = 0; j < toggleableLayerIds.length; j++) {
-            if (clickedLayer === toggleableLayerIds[j]) {
-                layers.children[j].className = 'active';
-                map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'visible');
-            }
-            else {
-                layers.children[j].className = '';
-                 map.setLayoutProperty(toggleableLayerIds[j], 'visibility', 'none');
-            }
-        }
-    };    
-    var layers = document.getElementById('menu');
-    layers.appendChild(link);
-} */
+}
 </script>
 </body>
