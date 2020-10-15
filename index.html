@@ -225,7 +225,7 @@ document.getElementById('slider').addEventListener('input', function(e) {
   //checken of de week al exists
   for (var i = 0; i < 5; i++) {
       // console.log(i);
-    mapLayer = map.getLayer('no2_week'+i)
+    mapLayer = map.getLayer(layers+'_week'+i)
     nonExist = (typeof mapLayer == 'undefined')
 
     if (i !== week) {
@@ -233,16 +233,16 @@ document.getElementById('slider').addEventListener('input', function(e) {
         continue;
       }
       if (i < week - 2 || i > week + 2) {
-        map.removeLayer('no2_week'+i);
-        map.removeSource('no2_week'+i);
+        map.removeLayer(layers+'_week'+i);
+        map.removeSource(layers+'_week'+i);
       }
-      else { map.setLayoutProperty('no2_week'+i, 'visibility', 'none'); }
+      else { map.setLayoutProperty(layers+'_week'+i, 'visibility', 'none'); }
     }
     if (i == week) {
       if (nonExist) {
-        mapCreate('no2_week'+i+".geojson", 'no2_week'+i);
+        mapCreate(layers+'_week'+i+".geojson", layers+'_week'+i);
       }
-      map.setLayoutProperty('no2_week'+i, 'visibility', 'visible');
+      map.setLayoutProperty(layers+'_week'+i, 'visibility', 'visible');
     }}
 
   // update the map
