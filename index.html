@@ -44,7 +44,7 @@ map.addLayer({
 map.on('click', 'world_countries', function(e){
 	new mapboxgl.Popup()
 		.setLngLat(e.lngLat)
-		.setHTML(e.features[0].properties.country + "Test")
+		.setHTML(e.features[0].properties.country + " Tweets: " + e.amountoftweets)
 		.addTo(map)
 });
 
