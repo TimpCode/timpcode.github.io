@@ -10,10 +10,14 @@
 	body { margin: 0; padding: 0; }
 	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
 
-	.mapboxgl-popup-content {
-		width: 800px;
+	.mapboxgl-popup {
+		max-width: 30% !important;
 		font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 		}
+
+	table, th, td {
+		border: 1px solid black;
+	}
 
 </style>
 </head>
@@ -53,7 +57,7 @@ map.addLayer({
 map.on('click', 'world_countries', function(e){
 	new mapboxgl.Popup()
 		.setLngLat(e.lngLat)
-		.setHTML("Amount of Tweets: " + e.features[0].properties.amountoftweets + "<p>Overall Sentiment: </p>" + e.features[0].properties.meansentiment + "<p>Most positive tweet: </p>" + e.features[0].properties.maxtweet + "<br>" + "Sentiment of this tweet: " + e.features[0].properties.maxsentiment)
+		.setHTML("Amount of Tweets: " + e.features[0].properties.amountoftweets + "<br>" + "Overall Sentiment: " + e.features[0].properties.meansentiment + "<br><br>" + `<table><tr><th></th><th>Tweet</th><th>Sentiment</th>   </tr>  <tr>  	<td><b>Most Positive</b></td>    <td>${e.features[0].properties.maxtweet}</td>    <td>${e.features[0].properties.maxsentiment}</td>  </tr>  <tr>  	<td><b>Most Negative</b></td>    <td>${e.features[0].properties.mintweet}</td>    <td>${e.features[0].properties.minsentiment}</td>  </tr></table>`)
 		.addTo(map)
 });
 
