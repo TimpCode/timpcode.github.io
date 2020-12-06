@@ -621,7 +621,9 @@
 "maxtweet": "@Jim_Jordan Because if Covid 19 was so scary as the msm and globalists portray it, they would not violate those rules but follow them rigorously.\nThe virus is about the great reset and agenda 2030. And you...your party and pres Trump must do everything in your power to stop that",
 "maxsentiment": 0.14166666666666666,
 "mintweet": "Coronavirus morning update: Dr. Scott Atlas is leaving his White House job; virus robs Bethlethem of Christmas cheer; plus the latest virus numbers and other developments. https://t.co/T0mmk3WaNx",
-"minsentiment": 0.0772
+"minsentiment": 0.0772,
+"meansentiment": 0.10943333333333333,
+"meansentimentcolor": "#1e9d88"
 },
 "geometry": {
 "type": "Polygon",
@@ -831,7 +833,9 @@
 "maxtweet": "And another thing. Is anyone keeping up with corona virus thing, the one that is KILLING people (and some debunk) or is it going to be free tickets to the Trump circus? ok, off my soapbox. #CountThis",
 "maxsentiment": -0.06590000000000001,
 "mintweet": "@murray_nyc @realDonaldTrump It is necessary to understand that Trump is not the culprit that the coronavirus has spread, let's go to the origins of the Coronavirus, no president of the world wanted or will want its inhabitants to die much less a virus that comes from china!",
-"minsentiment": -0.7263
+"minsentiment": -0.7263,
+"meansentiment": -0.3786833333333333,
+"meansentimentcolor": "#33618d"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -4161,7 +4165,9 @@
 "maxtweet": "Trump says \"we are the world's best\"\n\nThe US could experience a \u201csurge upon a surge\u201d during and after the Xmas holiday season, top infectious diseases expert Anthony Fauci has warned. \n\nHolidaying Americans face virus \u2018surge upon surge\u2019 | The New Daily https://t.co/hghC2QflZx",
 "maxsentiment": 0.765,
 "mintweet": "@ScottMorrisonMP this year you have\nStuffed the covid response \nKept two little girls locked in Detention \nDidn\u2019t hold a hose while the country burnt\nPissed off China\nPissed off Victoria (Victorian Virus) \nStuffed up Covid App\nSucked up to Trump\n#ScomosGottaGo https://t.co/03N05Xh2Xx",
-"minsentiment": -0.9313
+"minsentiment": -0.9313,
+"meansentiment": -0.10140881944444446,
+"meansentimentcolor": "#24848d"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -5151,7 +5157,9 @@
 "maxtweet": "\ud83c\udded\ud83c\uddf7 Croatia\u2019s Prime Minister Andrej Plenkovi\u0107 has tested positive for COVID-19, joining a long list of leaders that includes Donald Trump and Jair Bolsonaro \ud83d\ude37\n\nFind out who else has contracted the #virus \ud83d\udc47\nhttps://t.co/mNW8MtFhMQ",
 "maxsentiment": 0.2997,
 "mintweet": "Now that the US election is over, CNN finds the time to reveal leaked documents showing that China underreported Covid-19 numbers, took weeks to diagnose new cases &amp; didn\u2019t disclose a December flu spike in Hubei. Wasn\u2019t it why Trump called it Wuhan virus?\nhttps://t.co/ttVjMvSI8G",
-"minsentiment": -0.5994
+"minsentiment": -0.5994,
+"meansentiment": -0.14985,
+"meansentimentcolor": "#277d8e"
 },
 "geometry": {
 "type": "Polygon",
@@ -5319,7 +5327,9 @@
 "maxtweet": "I just went down the rabbitnhole again, this time it is the \"Biden cheated\" idiots who are trying to instigate a coup. And I can't help but think, wow, Joe Biden is doing more about the Corona virus than Trump has and he is not even in office yet.",
 "maxsentiment": 0.08364999999999995,
 "mintweet": "@dougducey @AZDHS tRUMP\"s fault many feel virus/numbers are false. Is the rest of the world in on this scam? People doubt because he's a narcissistic liar. COVID-19 is around the 3rd leading cause of death, Dr. Amesh Adalja, infectious disease physician, Johns Hopkins Ctr. https://t.co/Vm4ge2FaVy",
-"minsentiment": -0.58965
+"minsentiment": -0.58965,
+"meansentiment": -0.25415,
+"meansentimentcolor": "#2c718e"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -5587,7 +5597,9 @@
 "maxtweet": "Trump's coronavirus adviser resigns. Public health officials - including top infectious diseases expert Anthony Fauci - had accused Dr Atlas of giving President Trump misleading information about the spread of the virus.https://t.co/bTvRPBxLGW",
 "maxsentiment": -0.24805,
 "mintweet": "@Cernovich Wanna know what's really going on? This whole covid crisis was invented to stop Trump getting reelected. The whole world had to go in n lockdown for a virus which has an IFR of 0.05 to enable mail in ballots. We won't stand for it and we will go all the way to court in The Hague!",
-"minsentiment": -0.743
+"minsentiment": -0.743,
+"meansentiment": -0.5637833333333333,
+"meansentimentcolor": "#3e4888"
 },
 "geometry": {
 "type": "Polygon",
@@ -5951,7 +5963,9 @@
 "maxtweet": "Looking creative business card design?\nCheck out this link:\nhttps://t.co/QWkL1XLYTq\n\n#businesscard  #Creative #traditional   #unique #IDENTITY #branding #businesscarddesign #SalarioRosa #GFVIP #SmackDown #CovidCaughtTrump #covid #virus #Trump #size https://t.co/fXtYuiV33l",
 "maxsentiment": 0.4404,
 "mintweet": "Why trump and @senatemajldr are fond of killing American people, why it is hard for them to act according to experts, it is a virus not politics.....\n\nhttps://t.co/yEsUsCPIJf",
-"minsentiment": -0.4404
+"minsentiment": -0.4404,
+"meansentiment": 0.0,
+"meansentimentcolor": "#20908c"
 },
 "geometry": {
 "type": "Polygon",
@@ -6241,7 +6255,9 @@
 "maxtweet": "@AdaKirschner Does this make Covid 19 the USA Virus or the Trump Virus?",
 "maxsentiment": 0.0,
 "mintweet": "@AdaKirschner Does this make Covid 19 the USA Virus or the Trump Virus?",
-"minsentiment": 0.0
+"minsentiment": 0.0,
+"meansentiment": 0.0,
+"meansentimentcolor": "#20908c"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -6995,7 +7011,9 @@
 "maxtweet": "@Patzfan5112 @JoeBiden The proof is an idiot speaking and others more ignorant listening....crazy...this covid virus...worsened not by China but by Donald Trump allow to discover people level of ignorance....very interesting excercise.",
 "maxsentiment": 0.4684,
 "mintweet": "I don't care what these Trump anus crawlers decide to call the vaccine, Americans don't have to, 267,000 Americans have died from COVID-19 , millions more will have long term illness as a result of the Virus &amp; as a direct result of Trump's criminal negligence. https://t.co/z5sIIYsx8S",
-"minsentiment": -0.9067
+"minsentiment": -0.9067,
+"meansentiment": -0.19386111111111112,
+"meansentimentcolor": "#29798e"
 },
 "geometry": {
 "type": "Polygon",
@@ -8375,7 +8393,9 @@
 "maxtweet": "What I don\u2019t get with Fox News is how they pretend that COVID-19 doesn\u2019t exist, and that democrats trying to control the virus is \u201cpolitical tyranny\u201d, but praise trump for apparently making the vaccine for the virus that they say doesn\u2019t exist.",
 "maxsentiment": 0.6908,
 "mintweet": "@POTUS Let\u2019s call the COVID-19 virus what it really is \u201cTHE TRUMP VIRUS\u201d. The Trump virus has killed 260,000+ Americans and thousands more dying everyday, millions more infected, unemployed, facing evictions, and miles long food bank lines and Donald Trump does NOTHING!! NOTHING!",
-"minsentiment": -0.8617
+"minsentiment": -0.8617,
+"meansentiment": -0.08724888888888885,
+"meansentimentcolor": "#24858d"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -11693,7 +11713,9 @@
 "maxtweet": "@Trent_Tracker @stiffasaward @kurteichenwald @PressSec Trump never downplayed the virus\n\nCovid affects virtually nobody\n\nDenied demonstrators were forcibly removed, with tear gas, for Trump's Bible photo op",
 "maxsentiment": -0.4404,
 "mintweet": "@realDonaldTrump @US_FDA Where were you when COVID-19 has made America its central habitat and killed more than 260 000 Americans?\n\nPlaying golf, lying about the virus, tweeting conspiracy theories, etc. \n\nTrump is going down in history as the WORST POTUS in American history.\n\n#TrumpsTragicPresidency",
-"minsentiment": -0.6974333333333332
+"minsentiment": -0.6974333333333332,
+"meansentiment": -0.5689166666666666,
+"meansentimentcolor": "#3e4888"
 },
 "geometry": {
 "type": "Polygon",
@@ -11809,7 +11831,9 @@
 "maxtweet": "I know that a lot of news outlets report about different republicans contacting and then Isolating due to the COVID-19 virus although some republicans do not (against all judgement and logic).\nhttps://t.co/KUwHRcYQ79",
 "maxsentiment": 0.0,
 "mintweet": "@NatLog79 @isaacappelt @realDonaldTrump That's not true. If you did any research you would know the flu is more deadly then this China virus. It's a hoax, covid was and is not real, made up to make Trump look bad",
-"minsentiment": -0.4626
+"minsentiment": -0.4626,
+"meansentiment": -0.20068333333333327,
+"meansentimentcolor": "#29788e"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -12291,7 +12315,9 @@
 "maxtweet": "@GOPChairwoman @mercedesschlapp @realDonaldTrump Trump: the virus will go away, like a miracle\n\nNow you are giving him credit for a vaccine for a virus he called a left wing hoax..you hypocrites are amazing, the #gop will believe anything @realDonaldTrump says \ud83e\udd21 https://t.co/8Rb2Gv4jfW #TrumpIsANationalDisgrace #GOPHypocrites",
 "maxsentiment": 0.8979,
 "mintweet": "@Pattihatestrump @PragueloverR Trump is a virus! Unfortunately there is no vaccine that can be created to kill it! Trump is one virus letting another virus, Covid spread. That\u2019s what they do. They spread, they infect and they kill.",
-"minsentiment": -0.7564500000000001
+"minsentiment": -0.7564500000000001,
+"meansentiment": 0.15342142857142854,
+"meansentimentcolor": "#1fa286"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -13733,7 +13759,9 @@
 "maxtweet": "@ArcheeMcgee @kimberlyhere1 @BernardKerik That\u2019s true. Difference is when Virus escalated, Fauci took immediate steps to warn Americans, stress guidelines. In March, Trump referred to covid as hoax, claims it will just go away, has it, gets optimal treatment and calls it \u201cblessing from God\u201d. Where\u2019s your common sense?",
 "maxsentiment": 0.010099999999999993,
 "mintweet": "@kimberlyhere1 @BernardKerik Trump, accused covid of being hoax. Admitted to Woodward knew seriousness, didn\u2019t want to \u201cpanic\u201d people (as in affecting stock market). Been told it will just go away as our country is ravaged. Got virus, called it \u201cblessing from God\u201d. Election rigged or incompetent loser?",
-"minsentiment": -0.4076
+"minsentiment": -0.4076,
+"meansentiment": -0.19875,
+"meansentimentcolor": "#29788e"
 },
 "geometry": {
 "type": "Polygon",
@@ -14451,7 +14479,9 @@
 "maxtweet": "#RepublicansAreKilling as is @realDonaldTrump \n\u2018Is he just coming to bring Covid\u2019: Democrat Georgia candidate launches blistering attack on Trump state visit https://t.co/ptIgh8AxbK #SmartNews",
 "maxsentiment": -0.7003,
 "mintweet": "#RepublicansAreKilling as is @realDonaldTrump \n\u2018Is he just coming to bring Covid\u2019: Democrat Georgia candidate launches blistering attack on Trump state visit https://t.co/ptIgh8AxbK #SmartNews",
-"minsentiment": -0.7003
+"minsentiment": -0.7003,
+"meansentiment": -0.7003,
+"meansentimentcolor": "#45347f"
 },
 "geometry": {
 "type": "Polygon",
@@ -15517,7 +15547,9 @@
 "maxtweet": "https://t.co/X2qVMafjRI Splitting 5 to 4, Supreme Court Backs Religious Challenge to Cuomo\u2019s V https://t.co/kyGpdaPeRT Our Hashtag https://t.co/QUfNKHndND Results Toxic Election Donald Trump vs. Joe Biden 2020 #FWN #freeworldnews https://t.co/X2qVMafjRI",
 "maxsentiment": 0.5719,
 "mintweet": "https://t.co/X2qVMafjRI Virus Deaths Approach Spring Record Amid Changing U.S. Crisis https://t.co/Jzu6uiicmw Our Hashtag https://t.co/QUfNKHndND Results Toxic Election Donald Trump vs. Joe Biden 2020 #FWN #freeworldnews https://t.co/X2qVMafjRI",
-"minsentiment": -0.6249
+"minsentiment": -0.6249,
+"meansentiment": -0.2294308823529412,
+"meansentimentcolor": "#2b748e"
 },
 "geometry": {
 "type": "Polygon",
@@ -15959,7 +15991,9 @@
 "maxtweet": "Maybe Nate Robinson getting knocked TF out is the only way out of 2020. He waking up in Nov 2019, and Hillary is getting ready to run against Jeb Bush, Corona virus has been silence to background noise due to collab between China and the US. Trump is still making the",
 "maxsentiment": 0.3612,
 "mintweet": "@JohnFetterman If COVID is a hoax, why did Trump agree to spend billions on vaccines?  \n\nWhy did Trump want \"warp speed\" vaccine for a virus that doesn't exist?",
-"minsentiment": 0.08995
+"minsentiment": 0.08995,
+"meansentiment": 0.22557500000000005,
+"meansentimentcolor": "#24aa82"
 },
 "geometry": {
 "type": "Polygon",
@@ -16345,7 +16379,9 @@
 "maxtweet": "Anybody that does not know based on Bob Woodward's book and the tapes that #Trump let this virus get this bad is either under a rock, stupid or both! He pitted states against one another and his administration. He did not use the powers he had to stop or certainly contain covid",
 "maxsentiment": -0.3904,
 "mintweet": "Anybody that does not know based on Bob Woodward's book and the tapes that #Trump let this virus get this bad is either under a rock, stupid or both! He pitted states against one another and his administration. He did not use the powers he had to stop or certainly contain covid",
-"minsentiment": -0.3904
+"minsentiment": -0.3904,
+"meansentiment": -0.3904,
+"meansentimentcolor": "#33608d"
 },
 "geometry": {
 "type": "Polygon",
@@ -16805,7 +16841,9 @@
 "maxtweet": "@InDepthMMA @davedoylemma I'm pretty sure he's talking about not having fans and all the regulations with Covid, and how Trump was going to let fans in sports.Not the actual virus its self. It was pretty clear then, that's why no one asked him anything",
 "maxsentiment": 0.61395,
 "mintweet": "Stupid people always blaming other of their mistakes https://t.co/4hzl6YJo1G \nTrump says terminating U.S. relationship with World Health Organization over virus https://t.co/OYGFLH1OT6",
-"minsentiment": -0.8442
+"minsentiment": -0.8442,
+"meansentiment": -0.2308785714285714,
+"meansentimentcolor": "#2b748e"
 },
 "geometry": {
 "type": "Polygon",
@@ -17029,7 +17067,9 @@
 "maxtweet": "@PereGrimmer @hbdchick QALY is a poor measure.. compared to what alternative? Trump's covid policy slayed 270,000 and counting... compared to what alternative? and who's to say this \"virus\" ever even existed, anyway?",
 "maxsentiment": -0.4767,
 "mintweet": "@PereGrimmer @hbdchick QALY is a poor measure.. compared to what alternative? Trump's covid policy slayed 270,000 and counting... compared to what alternative? and who's to say this \"virus\" ever even existed, anyway?",
-"minsentiment": -0.4767
+"minsentiment": -0.4767,
+"meansentiment": -0.4767,
+"meansentimentcolor": "#39548b"
 },
 "geometry": {
 "type": "Polygon",
@@ -17367,7 +17407,9 @@
 "maxtweet": "@realDonaldTrump Forget you rallies, 2.500 died yesterday!\n\nTrump administration has downplayed the virus, ridiculed the use of masks and organized large rallies - and still has no comprehensive plan to fight #Covid.  #TrumpGenocide \n\nhttps://t.co/Wcq1dE2uTE",
 "maxsentiment": -0.6740999999999999,
 "mintweet": "266k people have died from covid \n\nTHAT SHIT IS WILD and Trump and his administration downplayed the virus since January",
-"minsentiment": -0.8374
+"minsentiment": -0.8374,
+"meansentiment": -0.7557499999999999,
+"meansentimentcolor": "#472b7a"
 },
 "geometry": {
 "type": "Polygon",
@@ -17705,7 +17747,9 @@
 "maxtweet": "I hope before Joe Biden moves into the White House they spray it down for the corona virus. Trump just keeps spreading it around!",
 "maxsentiment": 0.4404,
 "mintweet": "#USA. #Trump! There must be a case of charging him with dereliction of duty regarding the terrible failure towards the Corona Virus.\nHis denial and deliberate lack of action has without doubt caused so many Americans to suffer and die!",
-"minsentiment": -0.7929
+"minsentiment": -0.7929,
+"meansentiment": -0.041146527777777775,
+"meansentimentcolor": "#228a8d"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -18169,7 +18213,9 @@
 "maxtweet": "The polls: lol\nThe Science: lol\nThe Conservative Party: lol\nJoe Biden won the US election: lol\nCovid19's the deadliest virus ever: lol\nThere will be a V-shapped recovery: lol\nTrump's a bigger threat than Xi/CCP: lol https://t.co/97Zw1TFYVC",
 "maxsentiment": 0.9666,
 "mintweet": "Trump &amp; his traitors want USA under martial law!Wow what\u2019s next from this idiocy-whilst thousands die from Corona virus, the inept hapless president only effort is how much can he cream money off his moronic supporters. Trump should be charged with treason and corporate murder!!",
-"minsentiment": -0.8307
+"minsentiment": -0.8307,
+"meansentiment": -0.15465031446540886,
+"meansentimentcolor": "#277d8e"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -18419,7 +18465,9 @@
 "maxtweet": "The Trump taint. \n\nSplitting 5 to 4, Supreme Court Backs Religious Challenge to Cuomo\u2019s Virus Shutdown Order https://t.co/3oWQz6LRLJ",
 "maxsentiment": 0.5719,
 "mintweet": "@mallen2010 @JenniferJJacobs Actually it's the opposite. The Trumptards are furious that Biden is going to be DELIVERING the vaccine and President when Covid is gone. Trump couldve stated President, had he showed leadership with this virus. Nations tend to support their leader in a crisis. Trump blew it.",
-"minsentiment": -0.45595
+"minsentiment": -0.45595,
+"meansentiment": 0.057975,
+"meansentimentcolor": "#1e978a"
 },
 "geometry": {
 "type": "Polygon",
@@ -18535,7 +18583,9 @@
 "maxtweet": "@PaaQwesiAttaka You people talk to much ... Togo was even giving free water and electricity, Trump never used the covid money to campaign even but was campaigning base on how he managed the virus . https://t.co/FBZMZAE20x",
 "maxsentiment": 0.431,
 "mintweet": "@PaaQwesiAttaka You people talk to much ... Togo was even giving free water and electricity, Trump never used the covid money to campaign even but was campaigning base on how he managed the virus . https://t.co/FBZMZAE20x",
-"minsentiment": 0.431
+"minsentiment": 0.431,
+"meansentiment": 0.431,
+"meansentimentcolor": "#4bc26c"
 },
 "geometry": {
 "type": "Polygon",
@@ -19159,7 +19209,9 @@
 "maxtweet": "Apparently #covid19 is the first virus in History that can be successfully contained by sound bites and photo ops. At least that's the message @PrimeministerGR is sending today. K. Mitsotakis is a graduate of the fam ed Trump School of Epidemiology and Public Relations.#Greece",
 "maxsentiment": 0.4939,
 "mintweet": "From Trump in US to Boris Johnson in UK to Bolsonaro to In Brazil, a pattern appears of ruling conservatives openly ignoring #covid19 rules even as their nations get hit hard by the virus. Now Greek PM caught out doing the same",
-"minsentiment": -0.4767
+"minsentiment": -0.4767,
+"meansentiment": 0.008599999999999997,
+"meansentimentcolor": "#20918c"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -20271,7 +20323,9 @@
 "maxtweet": "In golf Trump can make his wishes prevail over reality, but the virus is uninterested our fantasies. \u201cUnless we see massive behavioral change, we are going to see January and February lockdowns,\u201d she added. \u201cThe virus doesn\u2019t care it\u2019s Christmas.\u201d https://t.co/4WpCHhH0op",
 "maxsentiment": 0.28555,
 "mintweet": "US Coronavirus Cases:\n14,001,275\nDeaths that could have been avoided\n275,499\nRecovered\n8,271,986\n3.22% Death rate\nSo if no one else get the virus around\n600,000 people will die\nHas anyone heard of a star, politician or rich person dying?\nMan that should be in jail\nDonald Trump",
-"minsentiment": -0.8434
+"minsentiment": -0.8434,
+"meansentiment": -0.2718833333333333,
+"meansentimentcolor": "#2d6f8e"
 },
 "geometry": {
 "type": "Polygon",
@@ -20937,7 +20991,9 @@
 "maxtweet": "Justices Tell Federal Judge to Reconsider Virus Limits on California Churches\n\nCan the US EVER be a state of Freedom &amp; Equality with Justice for All?\n\nWhen Dems R the majority but NEVER have the balls to really fight to a Full Win?\n\nJail all Trump crooks. https://t.co/aZH7qJx8fU",
 "maxsentiment": 0.57695,
 "mintweet": "@NevadaLeone06 @mike_wanaoni @realDonaldTrump @OANN It\u2019s not made up - just like \u201cwe are rounding the corner with the Virus\u201d  November we added 4 M new cases &amp; over 90k in hospital with Covid, the highest number ever since pandemic! But sure go  ahead &amp; defend him - but yet you said ZERO about Don Jr statement &amp; neither did TRUMP",
-"minsentiment": 0.3204
+"minsentiment": 0.3204,
+"meansentiment": 0.448675,
+"meansentimentcolor": "#4fc369"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -22007,7 +22063,9 @@
 "maxtweet": "@IvankaTrump @narendramodi Well said our beloved beautiful Ivanka Trump.India-USA strong Friendship , military cooperation, economic ties etc.are must,demand of the day to save the world from criminal Chinese corona virus, Chinese Government expansion conspiracy against innocent India&amp;world 18countries.",
 "maxsentiment": 0.9231,
 "mintweet": "@RaisinaSeries @arungiri Trump loss wasn't because of reversal of pendulum away from RW but because people rejected Trump's personality and were tired of his foolish statements combined with Corona Virus thing.",
-"minsentiment": -0.9118
+"minsentiment": -0.9118,
+"meansentiment": 0.008978070175438604,
+"meansentimentcolor": "#20918c"
 },
 "geometry": {
 "type": "Polygon",
@@ -22571,7 +22629,9 @@
 "maxtweet": "@Geniusguy10 @zorinaq Sure it would be better than nothing, at high incidence levels the virus would get in regardless.\n\nhttps://t.co/sQ2INThSIQ",
 "maxsentiment": 0.6369,
 "mintweet": "@iamprimamateria @Carol65310463 @ChristinaKTLA Trump is in the Hated department because of his  slow recognition of the killer Virus Covid-19 and his ingnorance to the people of America of doing nothing and having to be pushed all the time All of Europe are laughing at his silly speeches and Tweets..",
-"minsentiment": -0.7351
+"minsentiment": -0.7351,
+"meansentiment": 0.037519047619047625,
+"meansentimentcolor": "#1f948b"
 },
 "geometry": {
 "type": "Polygon",
@@ -22957,7 +23017,9 @@
 "maxtweet": "@54321Aaaah @SilverEulalia @CNNPolitics Lmao yeah well tell that to other counties who have lost hell of a lot less because they took better counter measures. Thr only time Trump actually called it Covid when was he had it. To the other 270,000 dead it\u2019s just the China virus you clown",
 "maxsentiment": -0.07734999999999997,
 "mintweet": "@54321Aaaah @SilverEulalia @CNNPolitics Lmao yeah well tell that to other counties who have lost hell of a lot less because they took better counter measures. Thr only time Trump actually called it Covid when was he had it. To the other 270,000 dead it\u2019s just the China virus you clown",
-"minsentiment": -0.07734999999999997
+"minsentiment": -0.07734999999999997,
+"meansentiment": -0.07734999999999997,
+"meansentimentcolor": "#23878d"
 },
 "geometry": {
 "type": "Polygon",
@@ -23097,7 +23159,9 @@
 "maxtweet": "@kylegriffin1 Trump is cheering on the Corona Virus like it\u2019s the NFL team he was never able to buy.",
 "maxsentiment": 0.7003,
 "mintweet": "@kylegriffin1 Trump is cheering on the Corona Virus like it\u2019s the NFL team he was never able to buy.",
-"minsentiment": 0.7003
+"minsentiment": 0.7003,
+"meansentiment": 0.7003,
+"meansentimentcolor": "#9ad83c"
 },
 "geometry": {
 "type": "Polygon",
@@ -23303,7 +23367,9 @@
 "maxtweet": "Diplomacy is not easy, nor is it fast. It requires patience and lengthy negotiations. \n\nAnd if a President is seeking real change, for the good of his people and the world, he takes his time and doesn't move on impulse.\n\n#WHO #China #CoronaVirus \n https://t.co/IFfkB2w8ee",
 "maxsentiment": 0.049600000000000005,
 "mintweet": "#CDC chief warns #Americans face 'rough' #winter from #COVID-19 surge https://t.co/zHh79RPcwx #Covid_19 #markets #virus #health #vaccine #FDA #Pfizer #UK #London #economy #growth #dollar #jobs #Biden #unemployment #Trump #wallstreet #nasdaq #riskoff #bonds #stocks #biotech #fx",
-"minsentiment": -0.1779
+"minsentiment": -0.1779,
+"meansentiment": -0.06415,
+"meansentimentcolor": "#23888d"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -23681,7 +23747,9 @@
 "maxtweet": "@Newsweek But the corona virus has a higher approval rating than Trump.",
 "maxsentiment": 0.4767,
 "mintweet": "'The United States is the worst-affected country, with 266,074 COVID-19 deaths, and President Donald Trump's administration has issued conflicting messages on mask-wearing, travel and the danger posed by the virus.'",
-"minsentiment": -0.5106
+"minsentiment": -0.5106,
+"meansentiment": -0.15863333333333332,
+"meansentimentcolor": "#277c8e"
 },
 "geometry": {
 "type": "Polygon",
@@ -23835,7 +23903,9 @@
 "maxtweet": "@NYGovCuomo and deaths decreased in Japan and Italy, the number of cobits with an explosively strong and high mortality rate increased explosively in New York\u2048 I suspect that a Fresh made COVID-19 virus was brought into America several time\u2049\ufe0eto make \nblame President Trump .",
 "maxsentiment": 0.5267,
 "mintweet": "@marcorubio We all know!  That\u2019s why Trump is right to dub the Covid as \u201cChina Virus\u201d.  One of Trump\u2019s achievements is inarguably the recognition of China\u2019s threat.  Taiwan, #HongKong &amp; Australia are all recent examples of China\u2019s threat and bully!",
-"minsentiment": -0.65535
+"minsentiment": -0.65535,
+"meansentiment": -0.09089166666666666,
+"meansentimentcolor": "#24858d"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -24587,7 +24657,9 @@
 "maxtweet": "Trump virus adviser quits as vaccine hopes given new boost: Washington, United States, Nov 30 - President Donald Trump's controversial coronavirus adviser resigned Monday, while hopes for a first wave.. https://t.co/BVH9L8YyYh",
 "maxsentiment": 0.8074,
 "mintweet": "What if the Corona virus was not there, what these people blaming everything to Corona  could be blaming... Ooh, they could blame Trump for everything!!",
-"minsentiment": -0.7088
+"minsentiment": -0.7088,
+"meansentiment": 0.2079277777777778,
+"meansentimentcolor": "#23a883"
 },
 "geometry": {
 "type": "Polygon",
@@ -25179,7 +25251,9 @@
 "maxtweet": "@JoeBiden You mean corona virus or trump ?",
 "maxsentiment": 0.0,
 "mintweet": "@JoeBiden You mean corona virus or trump ?",
-"minsentiment": 0.0
+"minsentiment": 0.0,
+"meansentiment": 0.0,
+"meansentimentcolor": "#20908c"
 },
 "geometry": {
 "type": "Polygon",
@@ -25397,7 +25471,9 @@
 "maxtweet": "This is the lurid tradition that U.S. President Donald Trump and his allies are carrying forward when they dub the coronavirus that causes COVID-19 \u201cthe China virus.\u201d",
 "maxsentiment": 0.0,
 "mintweet": "How's that whole overturning the election thing going? \n#GullibleWhiteMaleTrumpVoters \nElection Defense Fund\nTrump Vaccine \nChina Virus\nFake Posh Accent\n#COVID19 https://t.co/uQHopW8nXW",
-"minsentiment": -0.6249
+"minsentiment": -0.6249,
+"meansentiment": -0.31245,
+"meansentimentcolor": "#2f6a8d"
 },
 "geometry": {
 "type": "Polygon",
@@ -25461,7 +25537,9 @@
 "maxtweet": "China not clean on covid virus after all Trump was right",
 "maxsentiment": -0.3089,
 "mintweet": "China not clean on covid virus after all Trump was right",
-"minsentiment": -0.3089
+"minsentiment": -0.3089,
+"meansentiment": -0.3089,
+"meansentimentcolor": "#2f6a8d"
 },
 "geometry": {
 "type": "Polygon",
@@ -26177,7 +26255,9 @@
 "maxtweet": "@FoxNews Is this what you are distracting from? Because Trump, GOP who echoes his COVID lines and MANY pundits and shows on Fox News helped to create this disaster by downplaying the virus all along. I would not be surprised if Fox News faces many lawsuits when this is all said and done https://t.co/wkUQXWQtEr",
 "maxsentiment": -0.3963666666666667,
 "mintweet": "@FoxNews Is this what you are distracting from? Because Trump, GOP who echoes his COVID lines and MANY pundits and shows on Fox News helped to create this disaster by downplaying the virus all along. I would not be surprised if Fox News faces many lawsuits when this is all said and done https://t.co/wkUQXWQtEr",
-"minsentiment": -0.3963666666666667
+"minsentiment": -0.3963666666666667,
+"meansentiment": -0.3963666666666667,
+"meansentimentcolor": "#345f8d"
 },
 "geometry": {
 "type": "Polygon",
@@ -26575,7 +26655,9 @@
 "maxtweet": "he also only went to the BLM protests for an excuse to loot from stores, he believes that the corona virus is a hoax, voted for trump, and threw a big halloween party during a pandemic.",
 "maxsentiment": 0.0,
 "mintweet": "he also only went to the BLM protests for an excuse to loot from stores, he believes that the corona virus is a hoax, voted for trump, and threw a big halloween party during a pandemic.",
-"minsentiment": 0.0
+"minsentiment": 0.0,
+"meansentiment": 0.0,
+"meansentimentcolor": "#20908c"
 },
 "geometry": {
 "type": "Polygon",
@@ -26791,7 +26873,9 @@
 "maxtweet": "@YolodyKim @realDonaldTrump We are trying your countrymen did well in containing and controlling this covid-19 virus\n\nI haven't been able to sleep well since November 3rd 2016 when Trump got elected I can already feel a sense of relief\n\nMaybe I can reconstruct a decent sleep pattern now\n\n I wish you well",
 "maxsentiment": 0.8779,
 "mintweet": "@DadRational @xjippyx @Jake_AstroJet @MccaslinAndy @RexChapman Seriously we are the absolute worst in the world - everyone else looks at us and goes 'What the hell happened to them?' while were also the only nation who can't get a handle on the virus in the slightest. That's on leadership, period. Trump has only used covid to further divide",
-"minsentiment": -0.8859999999999999
+"minsentiment": -0.8859999999999999,
+"meansentiment": -0.302350701754386,
+"meansentimentcolor": "#2e6b8e"
 },
 "geometry": {
 "type": "Polygon",
@@ -28271,7 +28355,9 @@
 "maxtweet": "Trump wants to call it the, \"TRUMP Vaccine\"\nThey Should call COVID 19, \"Trump's Virus\"\n\nName the Vaccine after someone in science like the person that first discovered the danger.\nDon't let Trump claim credit for something that he wanted nothing to do with, &amp; Killed\nover 273,000. https://t.co/ku26WmKm7d",
 "maxsentiment": -0.33335000000000004,
 "mintweet": "Trump wants to call it the, \"TRUMP Vaccine\"\nThey Should call COVID 19, \"Trump's Virus\"\n\nName the Vaccine after someone in science like the person that first discovered the danger.\nDon't let Trump claim credit for something that he wanted nothing to do with, &amp; Killed\nover 273,000. https://t.co/ku26WmKm7d",
-"minsentiment": -0.33335000000000004
+"minsentiment": -0.33335000000000004,
+"meansentiment": -0.33335000000000004,
+"meansentimentcolor": "#30678d"
 },
 "geometry": {
 "type": "Polygon",
@@ -28591,7 +28677,9 @@
 "maxtweet": "@ChrisAable @TheLeadCNN @realDonaldTrump dude i dont give a hoot about trump or biden i didnt vote didnt like neither \n\nWhat i care about is when the dust settles and you me and everyone on this planet is finally safe from covid.\n\nwho do we blame for the world damages caused by the virus.",
 "maxsentiment": -0.18845,
 "mintweet": "@ChrisAable @TheLeadCNN @realDonaldTrump dude i dont give a hoot about trump or biden i didnt vote didnt like neither \n\nWhat i care about is when the dust settles and you me and everyone on this planet is finally safe from covid.\n\nwho do we blame for the world damages caused by the virus.",
-"minsentiment": -0.18845
+"minsentiment": -0.18845,
+"meansentiment": -0.18845,
+"meansentimentcolor": "#29798e"
 },
 "geometry": {
 "type": "Polygon",
@@ -29089,7 +29177,9 @@
 "maxtweet": "The sooner Trump gets out of the way, the sooner a concerted effort to beat the Corona Virus can be mounted.\nYou have run your course, Donald. \nPiss off and let real people lead, Trump\n@realDonaldTrump \n\nThe states where coronavirus death rates are peaking https://t.co/AXBg15chbA",
 "maxsentiment": -0.765,
 "mintweet": "The sooner Trump gets out of the way, the sooner a concerted effort to beat the Corona Virus can be mounted.\nYou have run your course, Donald. \nPiss off and let real people lead, Trump\n@realDonaldTrump \n\nThe states where coronavirus death rates are peaking https://t.co/AXBg15chbA",
-"minsentiment": -0.765
+"minsentiment": -0.765,
+"meansentiment": -0.765,
+"meansentimentcolor": "#472a79"
 },
 "geometry": {
 "type": "Polygon",
@@ -29679,7 +29769,9 @@
 "maxtweet": "Biden won  why face the nation for 5months said it was the prz Trump's fault now face the nation says it's the govs who has to stop the covid the fake news CBS abc nbc gave Biden free help said Trump caused this now it's govs job to stop the covid china virus the news/Biden wins",
 "maxsentiment": 0.6369,
 "mintweet": "The flu is the on the way out no more flu shot covid is the china virus it's the one after  pig virus that was giving to Obama 2009 now it was turn on Trump to get Biden the prz Obama gave china what they wanted now Biden will give china what they want",
-"minsentiment": -0.5719
+"minsentiment": -0.5719,
+"meansentiment": 0.021666666666666685,
+"meansentimentcolor": "#1f928c"
 },
 "geometry": {
 "type": "Polygon",
@@ -29997,7 +30089,9 @@
 "maxtweet": "If God was indeed the one that put Donald Trump as US president, he would have prevented COVID-19 from happening. If not for the virus that exposed Trump, he would have bullshitted his way into winning a 2nd term nearly easily.",
 "maxsentiment": 0.48325,
 "mintweet": "@realDonaldTrump I thought americans said that the corona virus would kill Donald Trump, he is still very much alive.\n\nHe is right, the covid 19 was a hoax and a scam to ruin his government",
-"minsentiment": -0.64405
+"minsentiment": -0.64405,
+"meansentiment": -0.2420928571428572,
+"meansentimentcolor": "#2b738e"
 },
 "geometry": {
 "type": "Polygon",
@@ -30471,7 +30565,9 @@
 "maxtweet": "@MollyJongFast Tell that to Trump and Kushner who profited from the \"small business\" loans granted by the government due to the corona virus. Grifting keeps on-going in this administration!",
 "maxsentiment": 0.5106,
 "mintweet": "@CIA Why is Trump digging his own grave the CORONA Virus is a hoax.",
-"minsentiment": -0.5719
+"minsentiment": -0.5719,
+"meansentiment": -0.09915,
+"meansentimentcolor": "#24848d"
 },
 "geometry": {
 "type": "Polygon",
@@ -30547,7 +30643,9 @@
 "maxtweet": "@seanhannity It hurts 270,000+ more times when trump tweets instead of address the corona virus, but collects money for his pocket. How about that?",
 "maxsentiment": -0.2617,
 "mintweet": "Just read about a young man (39) who died from Covid-19. His Facebook profile shows how he thought the virus was hyped and didn't want to wear a mask. This is nothing but truly truly sad. And Trump contributed to such attitudes.",
-"minsentiment": -0.4999333333333333
+"minsentiment": -0.4999333333333333,
+"meansentiment": -0.3808166666666667,
+"meansentimentcolor": "#33618d"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -31039,7 +31137,9 @@
 "maxtweet": "The Supreme Court of Trump's US nightmare begins...It is now more important to have super-spreader church events than to protect public health in a pandemic.\n\nSplitting 5 to 4, Supreme Court Backs Religious Challenge to Cuomo\u2019s Virus Shutdown Order\n\nhttps://t.co/goZCH8R3h7",
 "maxsentiment": 0.68945,
 "mintweet": "@NavinaHeyden Donald trump still wants China to pay for the so called damage and harm the Covid 19 virus has done to the US. Due to trumps own failures at protecting the US citizens.",
-"minsentiment": -0.63515
+"minsentiment": -0.63515,
+"meansentiment": -0.0027314814814814645,
+"meansentimentcolor": "#208f8c"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -31537,7 +31637,9 @@
 "maxtweet": "Gene pool shrinks in America. #TrumpEffect\nSplitting 5 to 4, US Supreme Court Backs Religious Challenge to Cuomo\u2019s Virus Shutdown Order\n\nTrump appointee Justice Amy Coney Barrett played a decisive role in the decision. https://t.co/paO5Xcf79y",
 "maxsentiment": 0.8859999999999999,
 "mintweet": "#WearMaskProtectLife\nNow, in the literal midst of a worldwide pathological assault from the corona virus, what should we expect from President Trump\u2019s still-unhidden contempt for world community \n@A_Kh_5 \n@TeamPakAlpha_",
-"minsentiment": -0.7184
+"minsentiment": -0.7184,
+"meansentiment": -0.0012166666666666756,
+"meansentimentcolor": "#208f8c"
 },
 "geometry": {
 "type": "Polygon",
@@ -31821,7 +31923,9 @@
 "maxtweet": "@hof_jim @ziggystardad @MrChingonE @QDecoder @Flattielover @PhilDiagnosis @LifeNyc2 @Dominique85_86 @MamaLouies @LadyOfTheOcean1 @TheOldPoet @Synyster63 @Emma34770971 @22CB22CB @Silver_Strike @cubancafecito @Dennisabm @giddy_bunny @Vickie627 @ConcernedinPV @AndrewJacksonV3 @BonhommePhilip @TomDoubting @SBDSoultrain @cbessex @tanya_fitch @Deadpools_R_Us @SlimJimJohn1 @PatriotsWon2020 @JDW714 @AlgrenQ @alshadowdancer @EMMYreincarnate @PhilMcK78908135 @JanineVorr @wookietim @ItsCassiusCup1 @BenResists @OnsideOrAnother @MistressRedWasp @mathmomma24 @downrangechaos @MrFly187 @StoppedItCold @MinnesotaExpat @ChrisKelly3422 @sparethoughts1 @BentKimble @SwoleKyloRen @GOPkleptocrat Is it also 100% effective for American COVID, aka the Trump virus?",
 "maxsentiment": 0.4767,
 "mintweet": "@thehill Trump's forgiveness will be like the Election; They sold him the idea that he won in court and lost. (fraud not consumed) will now be the same; the dead Covid 19 are not forgiven. The China \ud83c\udde8\ud83c\uddf3 Virus \ud83e\udda0 is pending. ??",
-"minsentiment": -0.0192
+"minsentiment": -0.0192,
+"meansentiment": 0.22875,
+"meansentimentcolor": "#25ab81"
 },
 "geometry": {
 "type": "Polygon",
@@ -32367,7 +32471,9 @@
 "maxtweet": "@ybarrap Can anyone tell me please who it is that does something when The President stops doing his job Trump is only focused on the election. In the meantime Covid is rampant thousands are dying everyday thousands and thousands are catching the virus how and when can trump be replaced",
 "maxsentiment": 0.5106,
 "mintweet": "@Mike_Pence @CDCgov America could really use you. The President has gone mad. You know Trump hasn\u2019t done a damn thing to slow the Covid virus All he does is make pointless tweets and spends millions on pointless re-counts. Trump is crazy and you need to take over \n@GOP TRUMP HAS GONE COMPLETELY MAD",
-"minsentiment": -0.5687666666666666
+"minsentiment": -0.5687666666666666,
+"meansentiment": -0.057547962962962974,
+"meansentimentcolor": "#23898d"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -32853,7 +32959,9 @@
 "maxtweet": "@realDonaldTrump @MariaBartiromo @FoxNews Trump has surrendered to Coronavirus a/k/a the Trump virus. He said it would miraculously go away November 4 but instead hoslitizations due to covid are at all time high.  He plays golf. All Trump does is claim his loss was rigged. We need a leader not a whiny liar. Welcome Biden",
 "maxsentiment": 0.022133333333333338,
 "mintweet": "Kaylienazi is referring to the COVID-19 vaccine as the Trump vaccine even though Trump didn't create it; however, he did create the virus death mess we have in the US so why not call COVID-19 the Trump Virus?",
-"minsentiment": -0.8413
+"minsentiment": -0.8413,
+"meansentiment": -0.33055333333333337,
+"meansentimentcolor": "#30678d"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -33405,7 +33513,9 @@
 "maxtweet": "@SpeakerPelosi @RepAnthonyBrown The most curious thing, that Trump minimized the reality of the danger of Covid-19, or did not believe in it, but claims that they give him credit for the vaccines worked by doctors and scientists who have given themselves body and soul to seek a remedy against the virus.",
 "maxsentiment": 0.4582,
 "mintweet": "Everyone blaming China for covid and now all point to the virus first appearance in USA... so Trump can't keep saying China virus, its american virus now! https://t.co/0j2sNUnKmS",
-"minsentiment": -0.5411
+"minsentiment": -0.5411,
+"meansentiment": 0.25514444444444445,
+"meansentimentcolor": "#28ae7f"
 },
 "geometry": {
 "type": "Polygon",
@@ -33647,7 +33757,9 @@
 "maxtweet": "@CNN You know: Trump was right. It is a Chinese virus. It\u2019s not corona, it\u2019s dictatorship.",
 "maxsentiment": 0.0,
 "mintweet": "@realDonaldTrump @US_FDA Trump lied about corona virus, lied about the economy, lied about voter fraud, lied about doing more for black people than Abraham Lincoln, lied about  Mexico paying for the wall, lied about testing,but we are expected to believe that 74 million Americans voted for him! https://t.co/8ckwuRwfVG",
-"minsentiment": -0.9565
+"minsentiment": -0.9565,
+"meansentiment": -0.6084666666666667,
+"meansentimentcolor": "#414286"
 },
 "geometry": {
 "type": "Polygon",
@@ -36833,7 +36945,9 @@
 "maxtweet": "@HRCpersists @dwachfwb @SenSchumer You are so right we have to first remove the real disease in this Country which was Trump then we have to fight for our lives this Corona Viruis with him or this virus we die.",
 "maxsentiment": -0.7579,
 "mintweet": "@HRCpersists @dwachfwb @SenSchumer You are so right we have to first remove the real disease in this Country which was Trump then we have to fight for our lives this Corona Viruis with him or this virus we die.",
-"minsentiment": -0.7579
+"minsentiment": -0.7579,
+"meansentiment": -0.7579,
+"meansentimentcolor": "#472a79"
 },
 "geometry": {
 "type": "Polygon",
@@ -37157,7 +37271,9 @@
 "maxtweet": "@govkristinoem Seriously? You\u2019re trolling the next President while people are struggling to feed their families, struggling to fight a virus, struggling to take care of people fighting the virus. And SD is what... # 2 in covid deaths per 100k; # 9 per 1m. You\u2019re really taking a page from Trump.",
 "maxsentiment": -0.8519,
 "mintweet": "@govkristinoem Seriously? You\u2019re trolling the next President while people are struggling to feed their families, struggling to fight a virus, struggling to take care of people fighting the virus. And SD is what... # 2 in covid deaths per 100k; # 9 per 1m. You\u2019re really taking a page from Trump.",
-"minsentiment": -0.8519
+"minsentiment": -0.8519,
+"meansentiment": -0.8519,
+"meansentimentcolor": "#481a6c"
 },
 "geometry": {
 "type": "Polygon",
@@ -37759,7 +37875,9 @@
 "maxtweet": "@realDonaldTrump Covid deaths at all time high! Trump VIRUS running rampant! Trump does NOTHING!",
 "maxsentiment": 0.0,
 "mintweet": "@realDonaldTrump Covid deaths at all time high! Trump VIRUS running rampant! Trump does NOTHING!",
-"minsentiment": 0.0
+"minsentiment": 0.0,
+"meansentiment": 0.0,
+"meansentimentcolor": "#20908c"
 },
 "geometry": {
 "type": "Polygon",
@@ -37955,7 +38073,9 @@
 "maxtweet": "https://t.co/0zTH9m9WMX Trump was right again. The  marker of the virus\u2019s mental toll, some experts say, will show up in the nation\u2019s suicide rate. The immediate effect is not at all clear, despite President Trump\u2019s recent claim that lockdown conditions were causing deaths.",
 "maxsentiment": -0.48145,
 "mintweet": "https://t.co/0zTH9m9WMX Trump was right again. The  marker of the virus\u2019s mental toll, some experts say, will show up in the nation\u2019s suicide rate. The immediate effect is not at all clear, despite President Trump\u2019s recent claim that lockdown conditions were causing deaths.",
-"minsentiment": -0.48145
+"minsentiment": -0.48145,
+"meansentiment": -0.48145,
+"meansentimentcolor": "#39548b"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -38243,7 +38363,9 @@
 "maxtweet": "Thanks! Emails remind me of work. I hate them! So we need to un-request. Got it! Next time ask in the first place. Or at least give an OPT-OUT directly inside your emails! Thanks for the quick response! I enjoyed your delivery otherwise! Especially during COVID\u2014AKA trump virus! https://t.co/B6gFoQaI23",
 "maxsentiment": 0.1458,
 "mintweet": "If only Donald Trump would have thought of Americans first and wanted do the right thing he should of spoken up. This is what makes Donald human scum. Trump Virus.\nNew manufacturing data indicate \u2018the feared economic slowdown is starting\u2019 https://t.co/80LPlOuomH via @Yahoo",
-"minsentiment": -0.4939
+"minsentiment": -0.4939,
+"meansentiment": -0.08630416666666668,
+"meansentimentcolor": "#24858d"
 },
 "geometry": {
 "type": "Polygon",
@@ -39159,7 +39281,9 @@
 "maxtweet": "@Firemoose24 @realDonaldTrump @ChanelRion @OANN Trump really thought it was a good idea to inject cooler liquid in the vains to get rid of corona virus. Doesn't THAT say all folk's!?\ud83d\ude02\ud83d\udc4e",
 "maxsentiment": 0.22795,
 "mintweet": "It is dangerous to believe that safety protection equipment stops anything (corona virus spread) \n- Anders Tegnell (Swedish Trump)\n\n#COVID19SWEDEN\n#bytStrategiNu https://t.co/O4jC5A4c1E",
-"minsentiment": -0.2263
+"minsentiment": -0.2263,
+"meansentiment": 0.05785000000000001,
+"meansentimentcolor": "#1e978a"
 },
 "geometry": {
 "type": "Polygon",
@@ -39339,7 +39463,9 @@
 "maxtweet": "@spinning_will Are you concerned about trump lying and downplaying a deadly virus all year? Or are you a COVID denier?",
 "maxsentiment": -0.44395,
 "mintweet": "@spinning_will Are you concerned about trump lying and downplaying a deadly virus all year? Or are you a COVID denier?",
-"minsentiment": -0.44395
+"minsentiment": -0.44395,
+"meansentiment": -0.44395,
+"meansentimentcolor": "#37598c"
 },
 "geometry": {
 "type": "Polygon",
@@ -39403,7 +39529,9 @@
 "maxtweet": "@realDonaldTrump You\u2019re really pushing Trump Virus on everyone! \nWhat is wrong with your head? \nWhy you haven\u2019t been stopped having these useless rallies, is criminal. \nCovid spreading so rapidly is entirely because of you.",
 "maxsentiment": -0.63655,
 "mintweet": "@realDonaldTrump You\u2019re really pushing Trump Virus on everyone! \nWhat is wrong with your head? \nWhy you haven\u2019t been stopped having these useless rallies, is criminal. \nCovid spreading so rapidly is entirely because of you.",
-"minsentiment": -0.63655
+"minsentiment": -0.63655,
+"meansentiment": -0.63655,
+"meansentimentcolor": "#423d84"
 },
 "geometry": {
 "type": "Polygon",
@@ -39867,7 +39995,9 @@
 "maxtweet": "@offshorepatriot I don\u2019t know how we can attribute any COVID successes to Trump. Knowing how deadly and dangerous the virus was he \u2018played it down\u201d and actively avoided preventative measures all while telling Americans it was \u201cfake.\u201d As far as was reported recently...",
 "maxsentiment": 0.03175,
 "mintweet": "@CBSNews Wow, no wonder Trump was so keen to blame others for the  sins of COVID-19; The virus is not only a killer but a rapist as well?",
-"minsentiment": -0.5981
+"minsentiment": -0.5981,
+"meansentiment": -0.1944388888888889,
+"meansentimentcolor": "#29798e"
 },
 "geometry": {
 "type": "Polygon",
@@ -40655,7 +40785,9 @@
 "maxtweet": "@PressSec I think you mean the trump virus vaccine. Because he was responsible for more deaths because of Covid and not one bit responsible for Pfizer developing a vaccine and it being approved in the UK first",
 "maxsentiment": 0.7506,
 "mintweet": "Trump need not worry about getting the Glory for the Vaccine \u201c Hell get Remembered for withholding the Covid Virus from the American Citizens\u201d&amp; then he kept lieng , telling us it was no more than a cold ! Now after almost 300, 000 Deaths he\u2019s still acting like it\u2019s a Joke!!",
-"minsentiment": 0.15930000000000002
+"minsentiment": 0.15930000000000002,
+"meansentiment": 0.45495,
+"meansentimentcolor": "#51c468"
 },
 "geometry": {
 "type": "Polygon",
@@ -40799,7 +40931,9 @@
 "maxtweet": "Organizer of anti-COVID lockdown rallies in PA tests positive DURING meeting in White House\nhttps://t.co/tGqapcKY84",
 "maxsentiment": 0.5574,
 "mintweet": "@stebottaioli people are getting vaccinated. Corona virus will be end in 2021. World will be great/normal. Trump-chine the fighting ends. Why gold and silver maket price bullish?",
-"minsentiment": -0.3612
+"minsentiment": -0.3612,
+"meansentiment": 0.13283333333333333,
+"meansentimentcolor": "#1ea087"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -41353,7 +41487,9 @@
 "maxtweet": "Are we supposed to feign naivety and call it a coincidence that pharmaceutical companies started announcing corona vaccine breakthroughs shortly after Donald Trump lost the election? \nHe was the greatest obstacle to their Great Reset and creating a virus was a way to get him out. https://t.co/NnW115jpfb https://t.co/iKMPLgdGhI",
 "maxsentiment": 0.261,
 "mintweet": "The US should mind its bussiness,\nThe US is battled with Trump conceeding Defeat,Fake mail in ballots and Corona Virus.\nThe US should first heal from those then it can temper with Uganda\u2019s problems.\nOtherwise we are very Okey with Uganda\u2019s situation Now. https://t.co/iQ5444Qt73",
-"minsentiment": -0.48325
+"minsentiment": -0.48325,
+"meansentiment": -0.12723888888888887,
+"meansentimentcolor": "#26808e"
 },
 "geometry": {
 "type": "Polygon",
@@ -41481,7 +41617,9 @@
 "maxtweet": "@DavidCornDC @realDonaldTrump It only takes 1 one person (Trump) to spread the virus. Remember, he said he was immune and before that he told us Covid-19 was nothing to worry about. He should be held accountable for the 250,000+ Americans who have died.",
 "maxsentiment": 0.00045000000000000595,
 "mintweet": "@TheLastLeg &amp; ran out of space so as a sad footnote- \nFor Corona Virus response:\n#DickOfTheYear is still obviously TRUMP",
-"minsentiment": -0.7703
+"minsentiment": -0.7703,
+"meansentiment": -0.40881,
+"meansentimentcolor": "#355d8c"
 },
 "geometry": {
 "type": "Polygon",
@@ -41893,7 +42031,9 @@
 "maxtweet": "Trump\u2019s efforts has American ranked 18 of 20 for virus response.\nHow\u2019s that for American exceptionalism!\nhttps://t.co/1hA4AgAWX6\n\nWe need the senate to reverse this VIRUS \ud83e\udda0 \nDonate to https://t.co/Js5uG4SWaH to support @ReverendWarnock &amp; @ossoff we need them both!\ud83d\udd25\n#ONEV1",
 "maxsentiment": 0.2987,
 "mintweet": "Trump\u2019s efforts has American ranked 18 of 20 for virus response.\nHow\u2019s that for American exceptionalism!\nhttps://t.co/1hA4AgAWX6\n\nWe need the senate to reverse this VIRUS \ud83e\udda0 \nDonate to https://t.co/Js5uG4SWaH to support @ReverendWarnock &amp; @ossoff we need them both!\ud83d\udd25\n#ONEV1",
-"minsentiment": 0.2987
+"minsentiment": 0.2987,
+"meansentiment": 0.2987,
+"meansentimentcolor": "#2fb37b"
 },
 "geometry": {
 "type": "Polygon",
@@ -41997,7 +42137,9 @@
 "maxtweet": "Donald Trump stays silent as US sees record 2,804 coronavirus deaths in a day -- but he and the gop will throw more holiday parties to celebrate and spread virus.\n\nhttps://t.co/HdGFwVfFw4",
 "maxsentiment": 0.9326,
 "mintweet": "@KrisSayce @Noahpinion @brianstelter There were no hoaxes:\nno Russia hoax - GUILT was proven\nno Ukraine/Impeachment Hoax - GUILT was proven\nno Coronavirus Hoax - 270,000 Trump Virus deaths, so far\n\nTrump is the Hoax - Trump is GUILTY",
-"minsentiment": -0.9698
+"minsentiment": -0.9698,
+"meansentiment": -0.12160613139397496,
+"meansentimentcolor": "#26818e"
 },
 "geometry": {
 "type": "MultiPolygon",
@@ -44061,7 +44203,9 @@
 "maxtweet": "I know the Corona Virus came from China, but Jeff Bezos looks like Lex Luther and or a Bond villain and he has a motive.  Hey if Trump gets to put his conspiracy theories out there so can I. I expect Bezos to have a gun pointed at me why he explains his whole plan now. https://t.co/XUfYM4VmeA",
 "maxsentiment": -0.5461,
 "mintweet": "I know the Corona Virus came from China, but Jeff Bezos looks like Lex Luther and or a Bond villain and he has a motive.  Hey if Trump gets to put his conspiracy theories out there so can I. I expect Bezos to have a gun pointed at me why he explains his whole plan now. https://t.co/XUfYM4VmeA",
-"minsentiment": -0.5461
+"minsentiment": -0.5461,
+"meansentiment": -0.5461,
+"meansentimentcolor": "#3d4b89"
 },
 "geometry": {
 "type": "Polygon",
@@ -44449,7 +44593,9 @@
 "maxtweet": "@lhhiep Chinese export to US doesn't go down during Trump dynasty to guess that part of it goes thru Vietnam. It did decrease during the Covid-19 months of February and March, thanks to virus, not Trump. Vietnam doesn't have so many pigs to import more US GMO soybeans and corn.",
 "maxsentiment": 0.4404,
 "mintweet": "The US officially recorded more than 14 million coronavirus cases today, a sign that the virus is spreading at an alarming rate. Donald Trump hasn't said a word. The president of our nation is too preoccupied with his election lunacy to lead. 48 days to go until he's replaced.",
-"minsentiment": -0.128
+"minsentiment": -0.128,
+"meansentiment": 0.1562,
+"meansentimentcolor": "#1fa286"
 },
 "geometry": {
 "type": "Polygon",
@@ -44713,7 +44859,9 @@
 "maxtweet": "\"Trump admin health officials are issuing increasingly dire warnings about the coronavirus + its rapid spread across the country..[But]..Trump has been largely silent when it comes to warning the public abt the need for precautions or major new steps\" to curb the virus' spread... https://t.co/RJyjXjYN0A",
 "maxsentiment": -0.765,
 "mintweet": "\"Trump admin health officials are issuing increasingly dire warnings about the coronavirus + its rapid spread across the country..[But]..Trump has been largely silent when it comes to warning the public abt the need for precautions or major new steps\" to curb the virus' spread... https://t.co/RJyjXjYN0A",
-"minsentiment": -0.765
+"minsentiment": -0.765,
+"meansentiment": -0.765,
+"meansentimentcolor": "#472a79"
 },
 "geometry": {
 "type": "Polygon",
@@ -44959,7 +45107,9 @@
 "maxtweet": "@myconspiracytheory#Trump planted Covid 19 in China to break their economy and have the vaccine at hand\ud83d\udc4b. Never kept in mind the mutation of the virus in mind. 2 nd Hitler in the making",
 "maxsentiment": 0.20800000000000002,
 "mintweet": "@MyBrainHurts9 @RealMattCouch @JamesonHalpern Beside the manufactured virus Covid19 what has been shitty under Trump these past 4 yrs?",
-"minsentiment": -0.5574
+"minsentiment": -0.5574,
+"meansentiment": -0.32060000000000005,
+"meansentimentcolor": "#30688d"
 },
 "geometry": {
 "type": "Polygon",
