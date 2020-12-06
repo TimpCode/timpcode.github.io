@@ -35,10 +35,10 @@ map.addLayer({
 	'type': 'fill',
 	'source': 'world_countries',
 	'layout': {
-		'text-field': ['get','country']
+		// 'text-field': ['get','country']
 	},
 	'paint': {
-		'fill-color': ['get', '#088'],
+		'fill-color': '#F2F12D',
 		'fill-opacity': 0.8
 	}
 });
@@ -46,7 +46,7 @@ map.addLayer({
 map.on('click', 'world_countries', function(e){
 	new mapboxgl.Popup()
 		.setLngLat(e.lngLat)
-		.setHTML(e.features[0].properties.country + " Tweets: " + e.features[1].properties.amountoftweets)
+		.setHTML(e.features[0].properties.country + " Tweets: " + e.features[1].properties.amountoftweets + "\n" + "TestNextLine")
 		.addTo(map)
 });
 
