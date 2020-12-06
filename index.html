@@ -9,6 +9,12 @@
 <style>
 	body { margin: 0; padding: 0; }
 	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+	.mapboxgl-popup-content {
+		width: 800px;
+		font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		}
+
 </style>
 </head>
 <body>
@@ -52,12 +58,12 @@ map.on('click', 'world_countries', function(e){
 });
 
 // Change the cursor to a pointer when the mouse is over the states layer.
-map.on('mouseenter', 'states-layer', function () {
+map.on('mouseenter', 'world_countries', function () {
 	map.getCanvas().style.cursor = 'pointer';
 });
  
 // Change it back to a pointer when it leaves.
-map.on('mouseleave', 'states-layer', function () {
+map.on('mouseleave', 'world_countries', function () {
 	map.getCanvas().style.cursor = '';
 });
 
