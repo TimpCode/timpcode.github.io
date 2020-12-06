@@ -35,7 +35,7 @@ map.addLayer({
 	'type': 'fill',
 	'source': 'world_countries',
 	'layout': {
-		 'text-field': {
+		 'text-field':
 		 	['get','country']
 	},
 	'paint': {
@@ -47,7 +47,7 @@ map.addLayer({
 map.on('click', 'world_countries', function(e){
 	new mapboxgl.Popup()
 		.setLngLat(e.lngLat)
-		.setHTML(e.features[0].properties.country + " Tweets: " + e.features[0].properties.amountoftweets + "<br>" + "TestNextLine")
+		.setHTML(e.features[0].properties.country + " Tweets: " + e.features[0].properties.amountoftweets + "<br>" + "TestNextLine" + "Mean Sentiment: " + e.features[0].meansentiment\t)
 		.addTo(map)
 });
 
